@@ -1,0 +1,9 @@
+import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
+export const posts=sqliteTable('posts',{id:text('id').primaryKey(),slug:text('slug').notNull().unique(),title:text('title').notNull(),excerpt:text('excerpt').notNull(),content:text('content').notNull(),category:text('category').notNull(),author:text('author').notNull(),image:text('image').notNull(),status:text('status').notNull(),publishedAt:integer('published_at').notNull(),createdAt:integer('created_at').notNull(),updatedAt:integer('updated_at').notNull(),version:integer('version').notNull().default(1),deletedAt:integer('deleted_at')});
+export const settings=sqliteTable('settings',{key:text('key').primaryKey(),value:text('value').notNull()});
+export const sessions=sqliteTable('admin_sessions',{id:text('id').primaryKey(),role:text('role').notNull(),csrf:text('csrf').notNull(),createdAt:integer('created_at').notNull(),lastSeen:integer('last_seen').notNull(),expiresAt:integer('expires_at').notNull(),credentialVersion:text('credential_version').notNull(),pendingSecret:text('pending_secret')});
+export const limits=sqliteTable('rate_limits',{key:text('key').primaryKey(),count:integer('count').notNull(),expiresAt:integer('expires_at').notNull()});
+export const mfa=sqliteTable('admin_mfa',{id:integer('id').primaryKey(),secret:text('secret').notNull(),lastStep:integer('last_step').notNull(),createdAt:integer('created_at').notNull()});
+export const recovery=sqliteTable('recovery_codes',{hash:text('hash').primaryKey(),createdAt:integer('created_at').notNull()});
+export const uploads=sqliteTable('uploads',{id:text('id').primaryKey(),key:text('object_key').notNull(),mime:text('mime').notNull(),size:integer('size').notNull(),createdAt:integer('created_at').notNull()});
+export const audit=sqliteTable('admin_audit',{id:text('id').primaryKey(),action:text('action').notNull(),postId:text('post_id'),createdAt:integer('created_at').notNull()});

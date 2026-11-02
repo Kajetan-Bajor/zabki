@@ -1,0 +1,50 @@
+[
+  {
+    "id": "original-1",
+    "slug": "życie-wspólnoty",
+    "title": "Życie wspólnoty",
+    "content": "W minioną sobotę odbyły się warsztaty rodzinne, podczas których dzieci i rodzice wspólnie przygotowywali świąteczne dekoracje. Spotkanie cieszyło się dużym zainteresowaniem, a uczestnicy mogli nie tylko rozwijać swoje zdolności manualne, ale także spędzić czas w duchu wspólnoty i radości. Dziękujemy wszystkim, którzy wzięli udział i zapraszamy na kolejne spotkania w parafii!",
+    "excerpt": "W minioną sobotę odbyły się warsztaty rodzinne, podczas których dzieci i rodzice wspólnie przygotowywali świąteczne dekoracje. Spotkanie cieszyło się dużym zainteresowaniem, a uczestnicy mogli nie tylko rozwijać swoje zdolności manualne, ale także spędzić czas w duchu wspólnoty i radości. Dziękujemy wszystkim, którzy wzięli udział i zapraszamy na kolejne spotkania w parafii!",
+    "category": "ogloszenia",
+    "author": "Kajetan Bajor",
+    "image": "/assets/7792b0951e30b693.jpg",
+    "status": "draft",
+    "published_at": 1765670400000,
+    "created_at": 1765670400000,
+    "updated_at": 1765670400000,
+    "version": 1,
+    "deleted_at": 1791360000000
+  },
+  {
+    "id": "original-2",
+    "slug": "spotkanie-wspólnoty-młodzieżowej",
+    "title": "Spotkanie wspólnoty młodzieżowej",
+    "content": "Serdecznie zapraszamy młodzież naszej parafii na spotkanie wspólnoty młodzieżowej, które odbędzie się w piątek o godz. 18:00 w sali parafialnej. Będzie to okazja do wspólnej modlitwy, rozmowy o wierze i integracji. Zachęcamy wszystkich, którzy chcą lepiej poznać Boga i rówieśników z parafii.",
+    "excerpt": "Serdecznie zapraszamy młodzież naszej parafii na spotkanie wspólnoty młodzieżowej, które odbędzie się w piątek o godz. 18:00 w sali parafialnej. Będzie to okazja do wspólnej modlitwy, rozmowy o wierze i integracji. Zachęcamy wszystkich, którzy chcą lepiej poznać Boga i rówieśników z parafii.",
+    "category": "ogloszenia",
+    "author": "Kajetan Bajor",
+    "image": "/assets/cfc6162a15ffbd08.jpg",
+    "status": "draft",
+    "published_at": 1765670400000,
+    "created_at": 1765670400000,
+    "updated_at": 1765670400000,
+    "version": 1,
+    "deleted_at": 1791360000000
+  },
+  {
+    "id": "original-3",
+    "slug": "adwentowe-rekolekcje-dla-dorosłych",
+    "title": "Adwentowe rekolekcje dla dorosłych",
+    "content": "W najbliższy weekend w naszej parafii odbędą się adwentowe rekolekcje dla dorosłych. Spotkania poprowadzi ks. Jan Kowalski. Tematem przewodnim będzie „Otwórz serce na Boże Słowo”. Rekolekcje rozpoczną się w sobotę o godz. 10:00 i zakończą w niedzielę po Mszy św. o godz. 12:00. Serdecznie zapraszamy do udziału – to doskonały czas przygotowania do Świąt Bożego Narodzenia.",
+    "excerpt": "W najbliższy weekend w naszej parafii odbędą się adwentowe rekolekcje dla dorosłych. Spotkania poprowadzi ks. Jan Kowalski. Tematem przewodnim będzie „Otwórz serce na Boże Słowo”. Rekolekcje rozpoczną się w sobotę o godz. 10:00 i zakończą w niedzielę po Mszy św. o godz. 12:00. Serdecznie zapraszamy do udziału – to doskonały czas przygotowania do Świąt Bożego Narodzenia.",
+    "category": "ogloszenia",
+    "author": "Kajetan Bajor",
+    "image": "/assets/9a278dcaec6f71c9.jpg",
+    "status": "draft",
+    "published_at": 1765670400000,
+    "created_at": 1765670400000,
+    "updated_at": 1765670400000,
+    "version": 1,
+    "deleted_at": 1791360000000
+  }
+]

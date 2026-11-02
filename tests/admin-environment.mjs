@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {prepareAdminEnvironment} from '../scripts/admin-environment.mjs';
+import {passwordOK} from '../lib/blog/security.ts';
+const password='Test-only passphrase '+crypto.randomUUID(),previous={ADMIN_SECRET_KEY:'a'.repeat(64)};
+const values={ADMIN_USERNAME:'test-editor',ADMIN_PASSWORD:password,SITE_ORIGIN:'https://example.test'};
+const prepared=prepareAdminEnvironment(values,previous);
+assert.equal(prepared.ADMIN_USERNAME,values.ADMIN_USERNAME);
+assert.equal(prepared.ADMIN_SECRET_KEY,previous.ADMIN_SECRET_KEY);
+assert.equal(prepared.SITE_ORIGIN,'https://example.test');
+assert(passwordOK(password,prepared.ADMIN_PASSWORD_HASH));
+assert(!passwordOK('incorrect',prepared.ADMIN_PASSWORD_HASH));
+assert(!JSON.stringify(prepared).includes(password));
+assert(!Object.hasOwn(prepared,'ADMIN_PASSWORD'));
+assert.notEqual(prepareAdminEnvironment(values,previous).ADMIN_PASSWORD_HASH,prepared.ADMIN_PASSWORD_HASH);
+assert.match(prepareAdminEnvironment(values).ADMIN_SECRET_KEY,/^[a-f0-9]{64}$/);
+for(const invalid of [{ADMIN_USERNAME:''},{ADMIN_USERNAME:'ab'},{ADMIN_PASSWORD:''},{ADMIN_PASSWORD:'too short'},{ADMIN_PASSWORD:' '.repeat(20)},{ADMIN_PASSWORD:'a'.repeat(1025)},{SITE_ORIGIN:'http://example.test'},{SITE_ORIGIN:'https://example.test/other'},{SITE_ORIGIN:'https://name:password@example.test'}])assert.throws(()=>prepareAdminEnvironment({...values,...invalid},previous));
+assert.throws(()=>prepareAdminEnvironment(values,{ADMIN_SECRET_KEY:'invalid'}));
+console.log('PASS: own credentials, password hashing, fresh salts, MFA key preservation, no plaintext output, input validation.');

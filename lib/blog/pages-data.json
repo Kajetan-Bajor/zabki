@@ -1,0 +1,641 @@
+{
+  "pages": [
+    {
+      "kind": "information",
+      "title": "Kontakt",
+      "path": "/kontakt",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/contact",
+      "intro": "Jesteśmy do Twojej dyspozycji. Skontaktuj się z kancelarią parafialną lub odwiedź nas w Ząbkach.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/720dca04a175496b.webp",
+      "sections": [],
+      "group": "informacje",
+      "special": "contact",
+      "introHTML": "<p>Jesteśmy do Twojej dyspozycji. Skontaktuj się z kancelarią parafialną lub odwiedź nas w Ząbkach.</p>"
+    },
+    {
+      "kind": "information",
+      "title": "Polityka prywatności",
+      "path": "/polityka-prywatnosci",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/privacy-policy",
+      "intro": "",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "A legal disclaimer",
+          "html": "<p>The explanations and information provided on this page are only general and high-level explanations and information on how to write your own document of a Privacy Policy. You should not rely on this article as legal advice or as recommendations regarding what you should actually do, because we cannot know in advance what are the specific privacy policies you wish to establish between your business and your customers and visitors. We recommend that you seek legal advice to help you understand and to assist you in the creation of your own Privacy Policy.</p>"
+        },
+        {
+          "title": "Privacy Policy - the basics",
+          "html": "<p>Having said that, a privacy policy is a statement that discloses some or all of the ways a website collects, uses, discloses, processes, and manages the data of its visitors and customers. It usually also includes a statement regarding the website’s commitment to protecting its visitors’ or customers’ privacy, and an explanation about the different mechanisms the website is implementing in order to protect privacy. </p><p> </p><p>Different jurisdictions have different legal obligations of what must be included in a Privacy Policy. You are responsible to make sure you are following the relevant legislation to your activities and location.</p>"
+        },
+        {
+          "title": "What to include in the Privacy Policy",
+          "html": "<p>Generally speaking, a Privacy Policy often addresses these types of issues: the types of information the website is collecting and the manner in which it collects the data; an explanation about why is the website collecting these types of information; what are the website’s practices on sharing the information with third parties; ways in which your visitors an customers can exercise their rights according to the relevant privacy legislation; the specific practices regarding minors’ data collection; and much much more. </p><p><br>\nTo learn more about this, check out our article “<a href=\"https://support.wix.com/en/article/creating-a-privacy-policy\">Creating a Privacy Policy</a>”.</p>"
+        }
+      ],
+      "group": "informacje",
+      "special": "privacy",
+      "status": "draft"
+    },
+    {
+      "kind": "information",
+      "title": "Nadchodzące wydarzenia",
+      "path": "/nadchodzace-wydarzenia",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/kalendarium",
+      "intro": "Informacje o spotkaniach i wydarzeniach w naszej parafii.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [],
+      "group": "informacje",
+      "special": "calendar",
+      "introHTML": "<p>Informacje o spotkaniach i wydarzeniach w naszej parafii.</p>"
+    },
+    {
+      "kind": "information",
+      "title": "Historia parafii",
+      "path": "/historia-parafii",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/h1",
+      "intro": "Ks. Jerzy Popiełuszko — wikariusz naszej parafii, męczennik i patron wolności.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Posługa w naszej parafii",
+          "html": "<p class=\"font_8 wixui-rich-text__text\">W latach 1972–1975 ks. Jerzy Popiełuszko posługiwał w naszej parafii Świętej Trójcy jako wikariusz. Choć urodził się na Podlasiu, to właśnie Ząbki stały się kluczowym etapem jego kapłańskiej drogi, zanim trafił na warszawski Żoliborz. Tu sprawował sakramenty i towarzyszył wiernym w codziennym życiu, zanim historia powołała go na kapelana „Solidarności” i duchowego opiekuna robotników.</p>\n\n"
+        },
+        {
+          "title": "Świadectwo wiary",
+          "html": "<p class=\"font_8 wixui-rich-text__text\">Jego słynne Msze za Ojczyznę gromadziły tłumy, a wezwanie św. Pawła „Zło dobrem zwyciężaj”, które uczynił swoim mottem, dawało nadzieję w mrokach komunizmu. Głosił prawdę cichym, lecz stanowczym głosem, mimo ciągłych prześladowań i inwigilacji. Był solą w oku ówczesnych władz, a dla nas pozostaje niedoścignionym wzorem wierności Bogu, Ojczyźnie i własnemu sumieniu.</p>\n\n"
+        },
+        {
+          "title": "Pamięć i duchowa obecność",
+          "html": "<p class=\"font_8 wixui-rich-text__text\">Męczeńska śmierć w październiku 1984 roku stała się kamieniem węgielnym wolnej Polski. Beatyfikowany w 2010 roku, ks. Jerzy w szczególny sposób „powrócił” do Ząbek w 2012 roku wraz z wprowadzeniem jego relikwii do naszej świątyni. Dziś, jako Błogosławiony i Honorowy Obywatel Miasta, nieustannie otacza naszą wspólnotę swoją duchową opieką.</p>"
+        }
+      ],
+      "group": "informacje",
+      "introHTML": "<p>Ks. Jerzy Popiełuszko — wikariusz naszej parafii, męczennik i patron wolności.</p>",
+      "status": "published"
+    },
+    {
+      "kind": "information",
+      "title": "Nasz Patron",
+      "path": "/nasz-patron",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/onp-item",
+      "intro": "Nasza parafia nosi wezwanie Świętej Trójcy.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Wezwanie parafii",
+          "html": "<p>Parafia pw. Świętej Trójcy w Ząbkach.</p>"
+        }
+      ],
+      "group": "informacje",
+      "introHTML": "<p>Nasza parafia nosi wezwanie Świętej Trójcy.</p>"
+    },
+    {
+      "kind": "information",
+      "title": "Obszar Parafii",
+      "path": "/obszar-parafii",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/onp-item-1",
+      "intro": "Informacje o przynależności parafialnej.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Przynależność do parafii",
+          "html": "<p>Informacje o przynależności parafialnej można uzyskać w kancelarii pod numerem <a href=\"tel:+48608186185\">608 186 185</a>, w godzinach jej otwarcia.</p>"
+        }
+      ],
+      "group": "informacje",
+      "introHTML": "<p>Informacje o przynależności parafialnej.</p>"
+    },
+    {
+      "kind": "information",
+      "title": "Duszpasterze",
+      "path": "/duszpasterze",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/onp-item-1-1",
+      "intro": "Duszpasterstwo parafii pw. Świętej Trójcy w Ząbkach.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Proboszcz",
+          "html": "<p>Ks. Dariusz Korbik — proboszcz.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "informacje",
+      "special": "clergy",
+      "introHTML": "<p>Duszpasterstwo parafii pw. Świętej Trójcy w Ząbkach.</p>"
+    },
+    {
+      "kind": "information",
+      "title": "Harmonogram",
+      "path": "/harmonogram",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/kopia-wspólnoty-item",
+      "intro": "Porządek Mszy Świętych i informacje o spowiedzi w parafii Świętej Trójcy w Ząbkach.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Msze Święte",
+          "html": "{{MASS_SCHEDULE}}"
+        },
+        {
+          "title": "Kancelaria parafialna",
+          "html": "{{OFFICE_SCHEDULE}}"
+        },
+        {
+          "title": "Spowiedź Święta",
+          "html": "{{CONFESSION_INFO}}"
+        },
+        {
+          "title": "Wieczory Uwielbienia",
+          "html": "{{WORSHIP_SCHEDULE}}"
+        }
+      ],
+      "group": "informacje",
+      "introHTML": "<p>Porządek Mszy Świętych i informacje o spowiedzi w parafii Świętej Trójcy w Ząbkach.</p>"
+    },
+    {
+      "kind": "list",
+      "title": "Sakramenty i posługi",
+      "path": "/sakramenty",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty",
+      "intro": "W sprawach przygotowania do sakramentów oraz posług duszpasterskich prosimy o kontakt z kancelarią parafialną: 608 186 185, w godzinach jej otwarcia.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/aebb7ab4a4bc8f13.webp",
+      "sections": [],
+      "group": "informacje",
+      "introHTML": "<p>W sprawach przygotowania do sakramentów oraz posług duszpasterskich prosimy o kontakt z kancelarią parafialną: 608 186 185, w godzinach jej otwarcia.</p>",
+      "cards": [
+        {
+          "title": "Chrzest",
+          "intro": "Chrzest włącza do wspólnoty Kościoła i rozpoczyna życie sakramentalne.",
+          "href": "/chrzest",
+          "image": "/assets/aebb7ab4a4bc8f13.webp"
+        },
+        {
+          "title": "Bierzmowanie",
+          "intro": "Bierzmowanie umacnia ochrzczonego darami Ducha Świętego.",
+          "href": "/bierzmowanie",
+          "image": "/assets/ff6e497cb05ede25.webp"
+        },
+        {
+          "title": "Eucharystia",
+          "intro": "Eucharystia jest centrum życia chrześcijańskiego i spotkaniem z Chrystusem.",
+          "href": "/eucharystia",
+          "image": "/assets/1c14f8b782785d61.webp"
+        },
+        {
+          "title": "Pokuta i pojednanie",
+          "intro": "Sakrament pokuty i pojednania jest spotkaniem z Bożym miłosierdziem.",
+          "href": "/pokuta-i-pojednanie",
+          "image": "/assets/a77fae764d98f43e.webp"
+        },
+        {
+          "title": "Kapłaństwo",
+          "intro": "Sakrament święceń jest powołaniem do służby Bogu i wspólnocie Kościoła.",
+          "href": "/kaplanstwo",
+          "image": "/assets/2cbd4330c9f982bb.webp"
+        },
+        {
+          "title": "Małżeństwo",
+          "intro": "Sakrament małżeństwa uświęca miłość i jedność małżonków.",
+          "href": "/malzenstwo",
+          "image": "/assets/814151afbdefeb3b.webp"
+        },
+        {
+          "title": "Namaszczenie chorych",
+          "intro": "Namaszczenie chorych przynosi duchowe umocnienie osobom chorym.",
+          "href": "/namaszczenie-chorych",
+          "image": "/assets/ea7086583e38e13b.webp"
+        },
+        {
+          "title": "Pogrzeb",
+          "intro": "Pogrzeb jest posługą liturgiczną, w której Kościół modli się za osobę zmarłą.",
+          "href": "/pogrzeb",
+          "image": "/assets/58207faf5fbc5ac3.webp"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "title": "Wspólnoty i inicjatywy",
+      "path": "/wspolnoty",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-2",
+      "intro": "Poznaj wspólnoty i inicjatywy związane z modlitwą, muzyką, formacją rodzinną i pomocą innym. Poniżej znajdziesz informacje o ich działalności i możliwościach zaangażowania.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [],
+      "group": "informacje",
+      "introHTML": "<p>Poznaj wspólnoty i inicjatywy związane z modlitwą, muzyką, formacją rodzinną i pomocą innym. Poniżej znajdziesz informacje o ich działalności i możliwościach zaangażowania.</p>",
+      "cards": [
+        {
+          "title": "Chór Parafialny Carmina",
+          "intro": "Wspólnota łącząca pokolenia, która od ponad pół wieku wzbogaca liturgię śpiewem. Zapraszamy osoby, które chcą rozwijać swój talent i wspólnie śpiewać na chwałę Bożą.",
+          "href": "/chor-parafialny-carmina",
+          "image": "/assets/47cda0704598d028.webp"
+        },
+        {
+          "title": "Domowy Kościół",
+          "intro": "Ruch dla małżeństw sakramentalnych, który pomaga rozwijać wiarę, wzmacniać relację małżeńską i budować życie rodzinne.",
+          "href": "/domowy-kosciol",
+          "image": "/assets/47cda0704598d028.webp"
+        },
+        {
+          "title": "Salonik Dobrego Słowa w Ząbkach",
+          "intro": "Miejsce spotkań, rozmowy i wsparcia tworzone przez Siostry ze Zgromadzenia Miłosierdzia Bożego oraz wolontariuszy Fundacji Misja Miłosierdzia.",
+          "href": "/salonik-dobrego-slowa-w-zabkach",
+          "image": "/assets/47cda0704598d028.webp"
+        },
+        {
+          "title": "Wieczory Uwielbienia",
+          "intro": "Wspólna modlitwa, śpiew i adoracja Najświętszego Sakramentu. Spotkania odbywają się w pierwszą niedzielę miesiąca o 19:00.",
+          "href": "/wieczory-uwielbienia",
+          "image": "/assets/47cda0704598d028.webp"
+        }
+      ]
+    },
+    {
+      "kind": "information",
+      "title": "O naszej parafii",
+      "path": "/o-naszej-parafii",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-3",
+      "intro": "Informacje o Mszach Świętych, kancelarii parafialnej, wspólnotach i spotkaniach w naszej parafii.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/6f3bc3b585d31f78.webp",
+      "sections": [],
+      "group": "informacje",
+      "special": "about",
+      "introHTML": "<p>Informacje o Mszach Świętych, kancelarii parafialnej, wspólnotach i spotkaniach w naszej parafii.</p>",
+      "cards": [
+        {
+          "title": "Harmonogram",
+          "intro": "Porządek Mszy Świętych i informacje o spowiedzi w parafii Świętej Trójcy w Ząbkach.",
+          "href": "/harmonogram",
+          "image": "/assets/47cda0704598d028.webp"
+        },
+        {
+          "title": "Wspólnoty i inicjatywy",
+          "intro": "Poznaj wspólnoty i inicjatywy związane z modlitwą, muzyką, formacją rodzinną i pomocą innym. Poniżej znajdziesz informacje o ich działalności i możliwościach zaangażowania.",
+          "href": "/wspolnoty",
+          "image": "/assets/47cda0704598d028.webp"
+        },
+        {
+          "title": "Duszpasterze",
+          "intro": "Duszpasterstwo parafii pw. Świętej Trójcy w Ząbkach.",
+          "href": "/duszpasterze",
+          "image": "/assets/47cda0704598d028.webp"
+        },
+        {
+          "title": "Nasz Patron",
+          "intro": "Nasza parafia nosi wezwanie Świętej Trójcy.",
+          "href": "/nasz-patron",
+          "image": "/assets/47cda0704598d028.webp"
+        },
+        {
+          "title": "Obszar Parafii",
+          "intro": "Informacje o przynależności parafialnej.",
+          "href": "/obszar-parafii",
+          "image": "/assets/47cda0704598d028.webp"
+        }
+      ]
+    },
+    {
+      "kind": "detail",
+      "title": "Chrzest",
+      "path": "/chrzest",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/about",
+      "intro": "Chrzest włącza do wspólnoty Kościoła i rozpoczyna życie sakramentalne.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/aebb7ab4a4bc8f13.webp",
+      "sections": [
+        {
+          "title": "Znaczenie sakramentu",
+          "html": "<p>Chrzest włącza do wspólnoty Kościoła i rozpoczyna życie sakramentalne.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Chrzest włącza do wspólnoty Kościoła i rozpoczyna życie sakramentalne.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Bierzmowanie",
+      "path": "/bierzmowanie",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/bierzmowanie",
+      "intro": "Bierzmowanie umacnia ochrzczonego darami Ducha Świętego.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/ff6e497cb05ede25.webp",
+      "sections": [
+        {
+          "title": "Znaczenie sakramentu",
+          "html": "<p>Bierzmowanie umacnia ochrzczonego darami Ducha Świętego.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Bierzmowanie umacnia ochrzczonego darami Ducha Świętego.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Eucharystia",
+      "path": "/eucharystia",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/eucharystia",
+      "intro": "Eucharystia jest centrum życia chrześcijańskiego i spotkaniem z Chrystusem.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/e3499f17d3d26eaa.webp",
+      "sections": [
+        {
+          "title": "Znaczenie sakramentu",
+          "html": "<p>Eucharystia jest centrum życia chrześcijańskiego i spotkaniem z Chrystusem.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Eucharystia jest centrum życia chrześcijańskiego i spotkaniem z Chrystusem.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Kapłaństwo",
+      "path": "/kaplanstwo",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/kap%C5%82a%C5%84stwo",
+      "intro": "Sakrament święceń jest powołaniem do służby Bogu i wspólnocie Kościoła.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/3535610474ae8641.webp",
+      "sections": [
+        {
+          "title": "Znaczenie sakramentu",
+          "html": "<p>Sakrament święceń jest powołaniem do służby Bogu i wspólnocie Kościoła.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Sakrament święceń jest powołaniem do służby Bogu i wspólnocie Kościoła.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Małżeństwo",
+      "path": "/malzenstwo",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/ma%C5%82%C5%BCe%C5%84stwo",
+      "intro": "Sakrament małżeństwa uświęca miłość i jedność małżonków.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/814151afbdefeb3b.webp",
+      "sections": [
+        {
+          "title": "Znaczenie sakramentu",
+          "html": "<p>Sakrament małżeństwa uświęca miłość i jedność małżonków.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Sakrament małżeństwa uświęca miłość i jedność małżonków.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Namaszczenie chorych",
+      "path": "/namaszczenie-chorych",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/namaszczenie-chorych",
+      "intro": "Namaszczenie chorych przynosi duchowe umocnienie osobom chorym.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/ea7086583e38e13b.webp",
+      "sections": [
+        {
+          "title": "Znaczenie sakramentu",
+          "html": "<p>Namaszczenie chorych przynosi duchowe umocnienie osobom chorym.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Namaszczenie chorych przynosi duchowe umocnienie osobom chorym.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Pogrzeb",
+      "path": "/pogrzeb",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/pogrzeb",
+      "intro": "Pogrzeb jest posługą liturgiczną, w której Kościół modli się za osobę zmarłą.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/58207faf5fbc5ac3.webp",
+      "sections": [
+        {
+          "title": "Posługa pogrzebowa",
+          "html": "<p>Pogrzeb jest posługą liturgiczną, w której Kościół modli się za osobę zmarłą.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Pogrzeb jest posługą liturgiczną, w której Kościół modli się za osobę zmarłą.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Pokuta i pojednanie",
+      "path": "/pokuta-i-pojednanie",
+      "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/pokuta-i-pojednanie",
+      "intro": "Sakrament pokuty i pojednania jest spotkaniem z Bożym miłosierdziem.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/a77fae764d98f43e.webp",
+      "sections": [
+        {
+          "title": "Znaczenie sakramentu",
+          "html": "<p>Sakrament pokuty i pojednania jest spotkaniem z Bożym miłosierdziem.</p>"
+        },
+        {
+          "title": "Kontakt z kancelarią",
+          "html": "{{SACRAMENT_CONTACT}}"
+        }
+      ],
+      "group": "sakramenty",
+      "introHTML": "<p>Sakrament pokuty i pojednania jest spotkaniem z Bożym miłosierdziem.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Chór Parafialny Carmina",
+      "path": "/chor-parafialny-carmina",
+      "source": "Materiały przekazane przez parafię — instrukcja Kuby",
+      "intro": "Wspólnota łącząca pokolenia, która od ponad pół wieku wzbogaca liturgię śpiewem. Zapraszamy osoby, które chcą rozwijać swój talent i wspólnie śpiewać na chwałę Bożą.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Historia chóru",
+          "html": "<p>Chór Parafialny Carmina został założony w kwietniu 1968 roku przez ówczesnego proboszcza, śp. ks. Tadeusza Karolaka. Z zespołu młodzieżowego, przez okres działalności w składzie żeńskim i z towarzyszeniem gitar, rozwinął się w chór mieszany śpiewający w pełnym czterogłosie. Łączy osoby w wieku od 13 do ponad 50 lat.</p>"
+        },
+        {
+          "title": "Muzyka i wspólnota",
+          "html": "<p>Chór zapewnia oprawę muzyczną świąt i uroczystości oraz niedzielnej Mszy Świętej. Przygotowuje koncerty kolęd, pieśni pasyjnych, maryjnych i patriotycznych oraz muzyczne drogi krzyżowe. Część chórzystów współtworzy również parafialną Grupę Uwielbieniową.</p>"
+        },
+        {
+          "title": "Koncerty i kronika",
+          "html": "<p>W historii zespołu znalazły się wspólne koncerty z zespołem Lumen, między innymi z cyklu „Pop oratorium” i „Psalmy Dawida”, występy na Jasnej Górze oraz współpraca z Państwową Szkołą Muzyczną im. W. Lutosławskiego w Wołominie przy wykonaniu „Stabat Mater”. W kronice chóru zachowały się zdjęcia ks. Jerzego Popiełuszki z konkursu piosenki zorganizowanego w kościele w 1974 roku.</p>"
+        },
+        {
+          "title": "Tradycja św. Cecylii",
+          "html": "<p>Tradycją chóru jest uroczyste przyjęcie nowych członków 22 listopada, we wspomnienie św. Cecylii. Po rocznym okresie próbnym kandydaci składają przyrzeczenie i otrzymują strój chóralny. Obecnym wyróżnikiem strojów są zielone spódnice u kobiet i zielone muchy u mężczyzn.</p>"
+        },
+        {
+          "title": "Opieka i dyrygent",
+          "html": "<p>Opiekunem duchowym jest ks. proboszcz Dariusz Korbik, a dyrygentem organista Adam Wiśniewski.</p>"
+        },
+        {
+          "title": "Próby i zaproszenie",
+          "html": "<p><strong>Próby:</strong> czwartki o 19:00.<br><strong>Miejsce:</strong> Organistówka — salka przyparafialna.<br>Nie trzeba mieć profesjonalnego wykształcenia muzycznego. Liczą się chęci, słuch muzyczny i serce do śpiewu.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published",
+      "introHTML": "<p>Wspólnota łącząca pokolenia, która od ponad pół wieku wzbogaca liturgię śpiewem. Zapraszamy osoby, które chcą rozwijać swój talent i wspólnie śpiewać na chwałę Bożą.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Domowy Kościół",
+      "path": "/domowy-kosciol",
+      "source": "Materiały przekazane przez parafię — instrukcja Kuby",
+      "intro": "Ruch dla małżeństw sakramentalnych, który pomaga rozwijać wiarę, wzmacniać relację małżeńską i budować życie rodzinne.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "O ruchu",
+          "html": "<p>Domowy Kościół jest małżeńsko-rodzinnym ruchem świeckich działającym w ramach Ruchu Światło–Życie. Jest skierowany do małżeństw sakramentalnych i wspiera świadome przeżywanie wiary w codziennym życiu.</p>"
+        },
+        {
+          "title": "Formacja małżeńska",
+          "html": "<p>Formacja pomaga umacniać miłość i jedność małżeńską, wspólnie odnajdywać Chrystusa oraz tworzyć dobry klimat do wychowania dzieci. Obejmuje modlitwę, lekturę słowa Bożego, życie sakramentalne, rekolekcje, poznawanie współmałżonka i pracę nad sobą. Ważnym elementem są comiesięczne spotkania w grupie małżeństw wspierających się na drodze wiary.</p>"
+        },
+        {
+          "title": "Przydatne odnośniki",
+          "html": "<ul><li><a href=\"https://oazapraga.pl/\" target=\"_blank\" rel=\"noopener\">Domowy Kościół diecezji warszawsko-praskiej</a></li><li><a href=\"https://randkamalzenska.pl/\" target=\"_blank\" rel=\"noopener\">Randka Małżeńska</a></li><li><a href=\"https://wirtualnachoinka.pl/\" target=\"_blank\" rel=\"noopener\">Wirtualna Choinka</a></li><li><a href=\"https://www.dk.oaza.pl/\" target=\"_blank\" rel=\"noopener\">Strona krajowa Domowego Kościoła</a></li></ul>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published",
+      "introHTML": "<p>Ruch dla małżeństw sakramentalnych, który pomaga rozwijać wiarę, wzmacniać relację małżeńską i budować życie rodzinne.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Salonik Dobrego Słowa w Ząbkach",
+      "path": "/salonik-dobrego-slowa-w-zabkach",
+      "source": "Materiały przekazane przez parafię — instrukcja Kuby",
+      "intro": "Miejsce spotkań, rozmowy i wsparcia tworzone przez Siostry ze Zgromadzenia Miłosierdzia Bożego oraz wolontariuszy Fundacji Misja Miłosierdzia.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Miejsce spotkania",
+          "html": "<p>Salonik Dobrego Słowa jest inicjatywą Fundacji Misja Miłosierdzia, stworzoną przez Siostry ze Zgromadzenia Miłosierdzia Bożego. To otwarte miejsce dla seniorów, osób samotnych, wdów i wdowców, rodzin, młodzieży i dzieci — wszystkich, którzy potrzebują rozmowy, wsparcia i spotkania z drugim człowiekiem.</p>"
+        },
+        {
+          "title": "Rozmowa i rozwój",
+          "html": "<p>Spotkania obejmują rozmowy przy kawie i herbacie, poezję, lekturę, odczyty, wykłady i spotkania z gośćmi, a także pogadanki religijne, spotkania biblijne oraz warsztaty duchowości. Wspólnie obchodzone są urodziny, imieniny i rocznice uczestników.</p>"
+        },
+        {
+          "title": "Pomoc i inicjatywy",
+          "html": "<p>Działalność Saloniku obejmuje również pomoc osobom samotnym, ubogim i chorym oraz inicjatywy charytatywne. Uczestnicy przygotowują rękodzieło, szaliki, czapki, ozdoby i kartki okolicznościowe. Fundacja organizuje zbiórki na konkretne cele wspierające seniorów, rodziny i dzieci.</p>"
+        },
+        {
+          "title": "Wolontariat",
+          "html": "<p>Do współpracy zapraszani są dorośli i młodzież. Istnieje możliwość podpisania formalnej umowy o wolontariat.</p>"
+        },
+        {
+          "title": "Adres i gospodarze",
+          "html": "<p><strong>Adres Saloniku:</strong> ul. Józefa Piłsudskiego 27, Ząbki.<br><strong>Gospodarze:</strong> Siostry ze Zgromadzenia Miłosierdzia Bożego i wolontariusze Fundacji Misja Miłosierdzia.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published",
+      "introHTML": "<p>Miejsce spotkań, rozmowy i wsparcia tworzone przez Siostry ze Zgromadzenia Miłosierdzia Bożego oraz wolontariuszy Fundacji Misja Miłosierdzia.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Wieczory Uwielbienia",
+      "path": "/wieczory-uwielbienia",
+      "source": "Materiały przekazane przez parafię — instrukcja Kuby",
+      "intro": "Wspólna modlitwa, śpiew i adoracja Najświętszego Sakramentu. Spotkania odbywają się w pierwszą niedzielę miesiąca o 19:00.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "sections": [
+        {
+          "title": "Wspólnota uwielbienia",
+          "html": "<p>Wieczory Uwielbienia to czas zatrzymania, modlitwy i spotkania we wspólnocie. Grupę tworzą osoby z różnych parafii i wspólnot, które łączy pragnienie uwielbiania Boga przez śpiew i grę na instrumentach.</p>"
+        },
+        {
+          "title": "Modlitwa i adoracja",
+          "html": "<p>Spotkania obejmują wystawienie Najświętszego Sakramentu, wspólny śpiew i modlitwę. Niekiedy uczestnicy dzielą się świadectwami. Na zakończenie istnieje możliwość indywidualnego błogosławieństwa przez nałożenie rąk przez kapłana.</p>"
+        },
+        {
+          "title": "Otwarte zaproszenie",
+          "html": "<p>Zaproszenie jest otwarte dla osób w każdym wieku, również spoza parafii. Osoby śpiewające lub grające na instrumentach mogą porozmawiać z zespołem po spotkaniu o możliwości dołączenia.</p>"
+        },
+        {
+          "title": "Termin spotkań",
+          "html": "<p><strong>Termin:</strong> pierwsza niedziela miesiąca o 19:00.<br>Jeśli w tym terminie przypada inne ważne święto lub uroczystość, zmiana jest wcześniej podawana w ogłoszeniach parafialnych.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published",
+      "introHTML": "<p>Wspólna modlitwa, śpiew i adoracja Najświętszego Sakramentu. Spotkania odbywają się w pierwszą niedzielę miesiąca o 19:00.</p>"
+    }
+  ],
+  "aliases": {
+    "/contact": "/kontakt",
+    "/privacy-policy": "/polityka-prywatnosci",
+    "/kalendarium": "/nadchodzace-wydarzenia",
+    "/h1": "/historia-parafii",
+    "/onp-item": "/nasz-patron",
+    "/onp-item-1": "/obszar-parafii",
+    "/onp-item-1-1": "/duszpasterze",
+    "/kopia-wspólnoty-item": "/harmonogram",
+    "/sakramenty": "/sakramenty",
+    "/sakramenty-2": "/wspolnoty",
+    "/sakramenty-3": "/o-naszej-parafii",
+    "/sakramenty-1/about": "/chrzest",
+    "/sakramenty-1/bierzmowanie": "/bierzmowanie",
+    "/sakramenty-1/eucharystia": "/eucharystia",
+    "/sakramenty-1/kapłaństwo": "/kaplanstwo",
+    "/sakramenty-1/małżeństwo": "/malzenstwo",
+    "/sakramenty-1/namaszczenie-chorych": "/namaszczenie-chorych",
+    "/sakramenty-1/pogrzeb": "/pogrzeb",
+    "/sakramenty-1/pokuta-i-pojednanie": "/pokuta-i-pojednanie",
+    "/home": "/",
+    "/blog": "/wszystkie-posty",
+    "/blog/categories/ogłoszenia": "/ogloszenia-parafialne",
+    "/blog/categories/aktualności": "/ogloszenia-parafialne",
+    "/blog/categories/rada-parafialna": "/ogloszenia-parafialne",
+    "/blog/categories/ogloszenia": "/ogloszenia-parafialne",
+    "/blog/categories/slowo": "/slowo-na-dzis",
+    "/blog/categories/slowo-na-dzis": "/slowo-na-dzis",
+    "/kopia-wspolnoty-item": "/harmonogram",
+    "/sakramenty-1/kaplanstwo": "/kaplanstwo",
+    "/sakramenty-1/malzenstwo": "/malzenstwo",
+    "/blog/categories/aktualnosci": "/ogloszenia-parafialne"
+  }
+}
