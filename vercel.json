@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "node -e \"console.log('No package installation required')\"",
+  "buildCommand": "node scripts/build-vercel-proxy.mjs",
+  "outputDirectory": "vercel-output",
+  "routes": [
+    {
+      "src": "^/(.*)$",
+      "dest": "/api/vercel-proxy?__site_path=$1"
+    }
+  ]
+}
