@@ -1,21 +1,18 @@
-import { env as workerEnv } from 'cloudflare:workers';
-import adminHTML from './admin.html?raw';
+import {runtimeEnv} from '../server/runtime';
+import {readFileSync} from 'node:fs';
+import {join} from 'node:path';
+const adminHTML=readFileSync(join(process.cwd(),'lib/blog/admin.html'),'utf8');
 import { context, login, finishMfa, logout, requireAdmin, readJSON, readLimited, HttpError, rate, audit, local } from './auth';
 import { publicPosts, publicPost, adminPosts, savePost, deletePost, restorePost, importOriginal } from './posts';
-import { home, blog, article, notFound } from './render';
-import {withChrome} from './chrome';
-import {directory} from './directory';
-import {page,pages,aliases,eventICS} from './pages';
-import {parishName} from './content';
-import { random, esc, richText } from './security';
+import { publicPage, publicPath, response as siteResponse } from './public-route';
+import { random, richText } from './security';
 import type { Env, Category } from './types';
-const publicCSP="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'";
-const adminCSP="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'";
-function response(request:Request,body:string|BodyInit|null,status=200,type='text/html; charset=utf-8',extra:Record<string,string>={}){const isAdmin=new URL(request.url).pathname.startsWith('/admin');const h=new Headers({'Content-Type':type,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','X-Frame-Options':'DENY','Permissions-Policy':'camera=(), microphone=(), geolocation=()','Content-Security-Policy':isAdmin?adminCSP:publicCSP,...extra});if(new URL(request.url).protocol==='https:')h.set('Strict-Transport-Security','max-age=31536000');if(isAdmin)h.set('X-Robots-Tag','noindex, nofollow, noarchive');return new Response(request.method==='HEAD'?null:body,{status,headers:h})}
+function response(request:Request,body:string|BodyInit|null,status=200,type='text/html; charset=utf-8',extra:Record<string,string>={}){
+ return siteResponse(request,body,status,type,extra,new URL(request.url).pathname.startsWith('/admin'));
+}
 const json=(r:Request,data:unknown,status=200,headers:Record<string,string>={})=>response(r,JSON.stringify(data),status,'application/json; charset=utf-8',headers);
-function decorate(html:string,request:Request){const url=new URL(request.url);url.search='';url.hash='';return withChrome(html,url.pathname).replace(/<script[^>]+type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi,'').replace(/<link[^>]+rel="canonical"[^>]*>/gi,'').replace(/<meta[^>]+property="og:(?:url|title|description|image)"[^>]*>/gi,'').replace('</head>',`<link rel="canonical" href="${esc(url.href)}"><script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:parishName,telephone:"+48608186185"}).replace(/</g,'\\u003c')}</script></head>`)}
-async function upload(request:Request,env:Env){await requireAdmin(request,env,true);await rate(env,'upload',60,3600000);if(!request.headers.get('content-type')?.startsWith('multipart/form-data;'))throw new HttpError(415,'Wybierz plik zdjęcia.');const bytes=await readLimited(request,5*1024*1024+20000);const form=await new Request(request.url,{method:'POST',headers:{'Content-Type':request.headers.get('content-type')!},body:bytes}).formData();const file=form.get('file');if(!(file instanceof File)||file.size<12||file.size>5*1024*1024)throw new HttpError(400,'Zdjęcie musi mieć do 5 MB.');const buffer=new Uint8Array(await file.arrayBuffer());let mime='';if(buffer[0]===255&&buffer[1]===216&&buffer[2]===255)mime='image/jpeg';else if([137,80,78,71,13,10,26,10].every((v,i)=>buffer[i]===v))mime='image/png';else if(String.fromCharCode(...buffer.slice(0,4))==='RIFF'&&String.fromCharCode(...buffer.slice(8,12))==='WEBP')mime='image/webp';if(!mime||file.type!==mime)throw new HttpError(400,'Wgraj prawidłowy plik JPG, PNG lub WebP.');const id=random(16),key='blog/'+id;await env.BUCKET.put(key,buffer,{httpMetadata:{contentType:mime}});try{await env.DB.prepare('INSERT INTO uploads (id,object_key,mime,size,created_at) VALUES (?,?,?,?,?)').bind(id,key,mime,file.size,Date.now()).run()}catch(e){await env.BUCKET.delete(key);throw e}await audit(env,'image_uploaded');return json(request,{url:'/media/'+id},201)}
-async function handle(request:Request){const env=workerEnv as unknown as Env;const url=new URL(request.url);let path:string;try{path=decodeURIComponent(url.pathname).replace(/\/+$/,'')||'/'}catch{return response(request,'Nieprawidłowy adres.',400,'text/plain; charset=utf-8')}
+async function upload(request:Request,env:Env){await requireAdmin(request,env,true);await rate(env,'upload',60,3600000);if(!request.headers.get('content-type')?.startsWith('multipart/form-data;'))throw new HttpError(415,'Wybierz plik zdjęcia.');const bytes=await readLimited(request,3*1024*1024+20000);const form=await new Request(request.url,{method:'POST',headers:{'Content-Type':request.headers.get('content-type')!},body:bytes}).formData();const file=form.get('file');if(!(file instanceof File)||file.size<12||file.size>3*1024*1024)throw new HttpError(400,'Zdjęcie musi mieć do 3 MB.');const buffer=new Uint8Array(await file.arrayBuffer());let mime='';if(buffer[0]===255&&buffer[1]===216&&buffer[2]===255)mime='image/jpeg';else if([137,80,78,71,13,10,26,10].every((v,i)=>buffer[i]===v))mime='image/png';else if(String.fromCharCode(...buffer.slice(0,4))==='RIFF'&&String.fromCharCode(...buffer.slice(8,12))==='WEBP')mime='image/webp';if(!mime||file.type!==mime)throw new HttpError(400,'Wgraj prawidłowy plik JPG, PNG lub WebP.');const id=random(16),key='blog/'+id;await env.BUCKET.put(key,buffer,{httpMetadata:{contentType:mime}});try{await env.DB.prepare('INSERT INTO uploads (id,object_key,mime,size,created_at) VALUES (?,?,?,?,?)').bind(id,key,mime,file.size,Date.now()).run()}catch(e){await env.BUCKET.delete(key);throw e}await audit(env,'image_uploaded');return json(request,{url:'/media/'+id},201)}
+async function handle(request:Request){const env=runtimeEnv();const url=new URL(request.url);let path:string;try{path=publicPath(url)}catch{return response(request,'Nieprawidłowy adres.',400,'text/plain; charset=utf-8')}
  try{
   if(path==='/admin'){if(!['GET','HEAD'].includes(request.method))throw new HttpError(405,'Niedozwolona metoda.');return response(request,adminHTML)}
   if(path.startsWith('/admin/api/')){
@@ -34,22 +31,11 @@ async function handle(request:Request){const env=workerEnv as unknown as Env;con
   if(!['GET','HEAD'].includes(request.method))throw new HttpError(405,'Niedozwolona metoda.');
   if(path==='/api/blog'){const category=url.searchParams.get('category');if(category&&!['ogloszenia','slowo'].includes(category))throw new HttpError(400,'Nieprawidłowa kategoria.');const posts=await publicPosts(env,category as Category|undefined);return json(request,{posts})}
   if(path.startsWith('/media/')){const id=path.slice(7);if(!/^[a-f0-9]{32}$/.test(id))throw new HttpError(404,'Nie znaleziono zdjęcia.');const object=await env.BUCKET.get('blog/'+id);if(!object)throw new HttpError(404,'Nie znaleziono zdjęcia.');return response(request,object.body,200,object.httpMetadata?.contentType||'application/octet-stream',{'Cache-Control':'public, max-age=31536000, immutable','Content-Security-Policy':"default-src 'none'; sandbox",'ETag':object.httpEtag})}
-  const legacyPath=(path.replace(/^\/parafia-zabki(?=\/|$)/,'')||'/').toLowerCase();
-  const normalizedTarget=aliases[legacyPath]||([...pages.map(p=>p.path),'/','/lista-podstron','/wszystkie-posty','/ogloszenia-parafialne','/slowo-na-dzis'].includes(legacyPath)?legacyPath:null);
-  if(normalizedTarget&&normalizedTarget!==path)return response(request,null,308,'text/plain; charset=utf-8',{'Location':normalizedTarget+url.search});
-  const alias=aliases[path];if(alias&&alias!==path)return response(request,null,308,'text/plain; charset=utf-8',{'Location':alias+url.search});
-  const categoryRedirect:Record<string,string>={'/blog':'/wszystkie-posty','/blog/categories/ogloszenia':'/ogloszenia-parafialne','/blog/categories/ogłoszenia':'/ogloszenia-parafialne','/blog/categories/slowo':'/slowo-na-dzis'};if(categoryRedirect[path])return response(request,null,308,'text/plain; charset=utf-8',{'Location':categoryRedirect[path]+url.search});
-  if(url.pathname.endsWith('/')&&path!=='/'&&(pages.some(p=>p.path===path)||['/lista-podstron','/wszystkie-posty','/ogloszenia-parafialne','/slowo-na-dzis'].includes(path)))return response(request,null,308,'text/plain; charset=utf-8',{'Location':path+url.search});
-  if(path.endsWith('.ics')){const ics=eventICS(path.slice(0,-4));if(ics)return response(request,ics,200,'text/calendar; charset=utf-8',{'Content-Disposition':'attachment; filename=wydarzenie.ics'});}
-  if(path==='/lista-podstron')return response(request,decorate(directory(await publicPosts(env)),request));
-  const content=page(path);if(content)return response(request,decorate(content,request));
-  if(['/wszystkie-posty','/ogloszenia-parafialne','/slowo-na-dzis'].includes(path)){const category=path==='/ogloszenia-parafialne'?'ogloszenia':path==='/slowo-na-dzis'?'slowo':undefined;const n=Math.max(1,Math.min(10000,parseInt(url.searchParams.get('page')||'1')||1));return response(request,decorate(blog(await publicPosts(env,category),category,n),request));}
-  if(path==='/')return response(request,decorate(home(await publicPosts(env)),request));
-  if(path==='/blog'||path.startsWith('/blog/categories/')){let category:Category|undefined;if(path!=='/blog'){const c=path.slice('/blog/categories/'.length);if(['ogloszenia','ogłoszenia','aktualności','rada-parafialna'].includes(c))category='ogloszenia';else if(['slowo','slowo-na-dzis'].includes(c))category='slowo';else return response(request,decorate(notFound(),request),404)}const page=Math.max(1,Math.min(10000,parseInt(url.searchParams.get('page')||'1')||1));return response(request,decorate(blog(await publicPosts(env,category),category,page),request))}
-  if(path.startsWith('/post/')){const post=await publicPost(env,path.slice(6));return response(request,decorate(post?article(post):notFound(),request),post?200:404)}
-  if(path==='/sitemap.xml'){const origin=env.SITE_ORIGIN||url.origin;const posts=await publicPosts(env);const paths=['/',...pages.map(p=>p.path),'/lista-podstron','/wszystkie-posty','/ogloszenia-parafialne','/slowo-na-dzis',...posts.map(p=>'/post/'+encodeURIComponent(p.slug)+'/')];const xml='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+[...new Set(paths)].map(p=>'<url><loc>'+esc(origin+p)+'</loc></url>').join('')+'</urlset>';return response(request,xml,200,'application/xml; charset=utf-8');}
-  if(path==='/robots.txt')return response(request,'User-agent: *\nAllow: /\nDisallow: /admin\nSitemap: '+(env.SITE_ORIGIN||url.origin)+'/sitemap.xml\n',200,'text/plain; charset=utf-8');
-  return response(request,decorate(notFound(),request),404);
+  return await publicPage(request,path,{
+   posts:category=>publicPosts(env,category),
+   post:slug=>publicPost(env,slug),
+   origin:env.SITE_ORIGIN,
+  });
  }catch(error){if(error instanceof HttpError)return json(request,{error:error.message},error.status,error.status===429?{'Retry-After':'900'}:{});return json(request,{error:'Nie udało się wykonać operacji. Spróbuj ponownie później.'},500)}
 }
 export const GET=handle,HEAD=handle,POST=handle,PUT=handle,DELETE=handle,PATCH=handle;

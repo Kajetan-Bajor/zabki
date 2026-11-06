@@ -2,7 +2,7 @@ import seeds from './seeds.json';
 import type { Env, Post, Category } from './types';
 import { HttpError, audit } from './auth';
 import { random } from './security';
-export async function initialized(env:Env){return !!await env.DB.prepare("SELECT value FROM settings WHERE key='posts_imported'").first()}
+export async function initialized(env:Env){if(!env.databaseConfigured)return false;return !!await env.DB.prepare("SELECT value FROM settings WHERE key='posts_imported'").first()}
 const retiredImports=new Set(['original-1','original-2','original-3']);
 const isRetiredImport=(p:Post)=>retiredImports.has(p.id)&&p.version===1;
 async function retireOriginal(env:Env){await env.DB.prepare("UPDATE posts SET status='draft',deleted_at=?,updated_at=?,version=version+1 WHERE id IN ('original-1','original-2','original-3') AND version=1 AND deleted_at IS NULL").bind(Date.now(),Date.now()).run()}

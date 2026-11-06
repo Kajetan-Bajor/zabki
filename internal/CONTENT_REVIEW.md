@@ -4,7 +4,6 @@ Na wyraźną prośbę użytkownika przywrócono oryginalną sekcję „Wikariusz
 
 ## Aktualizacja
 
-Po odbiorze lokalnego szkicu użytkownik polecił publikację na ChatGPT Sites. Nie zmieniono statusu draft historii i polityki prywatności. Pozostałe braki poniżej nadal wymagają informacji od parafii; nie zastąpiono ich domysłami.
 
 # Odbiór treści — instrukcja Kuby, 26 października 2026
 
