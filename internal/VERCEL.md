@@ -1,8 +1,8 @@
 # Wdrożenie na Vercelu
 
-Vercel buduje publiczną część witryny z repozytorium. Pliki z `public/` trafiają do katalogu wynikowego, a `api/vercel-site.ts` renderuje strony z tych samych szablonów i danych, których używa wariant Cloudflare Workers. Linki kanoniczne publicznych stron odpowiadają adresowi używanemu przez odwiedzającego.
+Repozytorium zawiera dwa warianty uruchomienia. ChatGPT Sites buduje aplikację dla Cloudflare Workers. Konfiguracja `vercel.json` uruchamia na Vercelu niewielką funkcję pośredniczącą, która przekazuje żądania do istniejącej opublikowanej strony parafii w Sites. Vercel nie buduje projektu jako Next.js, więc nie wymaga `.next/routes-manifest.json`.
 
-Publiczne wpisy bloga, dodane w panelu zdjęcia i panel administracyjny korzystają z dotychczasowego backendu Sites. Gdy API wpisów jest chwilowo niedostępne, strona główna, katalog podstron i mapa witryny nadal pokazują treści z repozytorium. Wdrożenie Vercela nie wymaga publikowania nowej wersji projektu w Sites ani migracji jego danych.
+Adres Vercela działa jako dodatkowy adres tej samej strony: treści, blog, zdjęcia i panel administratora korzystają z tej samej bazy i konfiguracji konta w Sites. Działanie adresu Vercela zależy więc od dostępności strony w Sites. To nie jest niezależna migracja bazy i plików na Vercel. Kanoniczne adresy w HTML pozostają adresami Sites.
 
 Panel dostępny jest pod `/admin`. Funkcja sprawdza Origin przy żądaniach zmieniających dane, a następnie przekazuje je do istniejącego serwera, który nadal sprawdza sesję, MFA i token CSRF. Nie należy wyłączać tych zabezpieczeń. Hasła i klucze pozostają wyłącznie w konfiguracji Sites; nie dodawaj ich do repozytorium ani konfiguracji Vercela.
 

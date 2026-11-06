@@ -1,20 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "npm ci --include=dev --no-audit --no-fund",
+  "installCommand": "node -e \"console.log('No package installation required')\"",
   "buildCommand": "node scripts/build-vercel-proxy.mjs",
   "outputDirectory": "vercel-output",
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "^/((?:admin(?:/.*)?|api/blog/?|media/.*))$",
-      "dest": "/api/vercel-proxy?__site_path=$1"
-    },
-    {
       "src": "^/(.*)$",
-      "dest": "/api/vercel-site?__site_path=$1"
+      "dest": "/api/vercel-proxy?__site_path=$1"
     }
   ]
 }
