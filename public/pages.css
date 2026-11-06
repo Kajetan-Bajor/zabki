@@ -1,1 +1,37 @@
 .production-page{overflow-wrap:anywhere}.production-page .template-reading a:not(.template-button):not(.template-card a){color:var(--burgundy);text-decoration:underline;text-underline-offset:4px}.production-page .template-reading ol{list-style:decimal;padding-left:24px}.production-page .template-information-body{padding-bottom:70px}.production-page .template-information-body .template-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.event-actions{display:flex;flex-wrap:wrap;gap:16px}.parish-calendar{margin-bottom:50px}.calendar-controls{display:flex;align-items:end;flex-wrap:wrap;gap:10px}.calendar-controls label{font:12px/1.6 Arial;display:grid;gap:5px}.calendar-controls button,.calendar-controls input{min-height:44px;padding:10px 14px;background:#f7f0f3;border:1px solid #dfc5d0;border-radius:6px;color:#8d0b41;font:14px Arial;cursor:pointer}.calendar-weekdays,.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr))}.calendar-weekdays{text-align:center;font:12px Arial;padding-block:16px}.calendar-grid{border-top:1px solid #e7dbe0;border-left:1px solid #e7dbe0}.calendar-day{min-height:74px;padding:7px;border-right:1px solid #e7dbe0;border-bottom:1px solid #e7dbe0;font:12px/1.5 Arial;min-width:0}.calendar-day a{display:block;font-size:10px;background:#f6eaf0;padding:4px;border-radius:3px;margin-top:4px}.calendar-day.today{background:#f6eaf0;box-shadow:inset 0 0 0 1px #8d0b41}.calendar-day.empty{background:#faf8f7}.calendar-status{font-size:13px;margin-top:16px!important}.calendar-event{display:grid;grid-template-columns:145px minmax(0,1fr) 24px;align-items:center;gap:20px;padding:22px 0;border-top:1px solid #e7dbe0}.calendar-event time{font-size:12px;color:#8d0b41}.calendar-event time span{display:block;margin-top:4px}.calendar-event h3{font-size:25px;margin:0 0 8px}.calendar-event p{font-size:12px;margin:0}.production-page :target{scroll-margin-top:110px}@media(max-width:600px){.production-page .template-information-body .template-card-grid{grid-template-columns:1fr}.calendar-event{grid-template-columns:minmax(0,1fr) 24px;gap:10px}.calendar-event time{grid-column:1/-1}.calendar-day{min-height:55px;padding:4px}.calendar-day a{font-size:9px;padding:2px}.calendar-controls{gap:6px}.calendar-controls button,.calendar-controls input{padding:8px 10px}.production-page .template-information-body{padding-bottom:48px}}
+
+.parish-profile {
+  display: grid;
+  grid-template-columns: minmax(130px, 190px) minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+.parish-profile + .parish-profile { margin-top: 32px; }
+.parish-profile img, .parish-gallery img, .parish-graphic img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.parish-profile h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+.parish-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.parish-gallery figure, .parish-graphic { margin: 0; }
+.parish-gallery figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.template-community-sections {
+  max-width: 780px;
+  margin: 48px auto 0;
+}
+@media (max-width: 520px) {
+  .parish-profile, .parish-gallery { grid-template-columns: 1fr; }
+  .parish-profile img { width: min(100%, 240px); }
+}
+.parish-graphic + .parish-graphic { margin-top: 24px; }
