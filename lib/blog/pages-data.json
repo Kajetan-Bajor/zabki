@@ -62,6 +62,10 @@
       "image": "/assets/47cda0704598d028.webp",
       "sections": [
         {
+          "title": "Początki parafii",
+          "html": "<p>Pierwszy drewniany kościół w Ząbkach został poświęcony 8 października 1916 roku. Parafię erygował kard. Aleksander Kakowski 1 stycznia 1919 roku.</p><p>W latach trzydziestych XX wieku rozpoczęto budowę murowanej świątyni. Kościół został poważnie uszkodzony w 1944 roku, a naprawy przeprowadzono w kolejnym roku.</p>"
+        },
+        {
           "title": "Posługa w naszej parafii",
           "html": "<p class=\"font_8 wixui-rich-text__text\">W latach 1972–1975 ks. Jerzy Popiełuszko posługiwał w naszej parafii Świętej Trójcy jako wikariusz. Choć urodził się na Podlasiu, to właśnie Ząbki stały się kluczowym etapem jego kapłańskiej drogi, zanim trafił na warszawski Żoliborz. Tu sprawował sakramenty i towarzyszył wiernym w codziennym życiu, zanim historia powołała go na kapelana „Solidarności” i duchowego opiekuna robotników.</p>\n\n"
         },
@@ -106,7 +110,7 @@
       "sections": [
         {
           "title": "Przynależność do parafii",
-          "html": "<p>Informacje o przynależności parafialnej można uzyskać w kancelarii pod numerem <a href=\"tel:+48608186185\">608 186 185</a>, w godzinach jej otwarcia.</p>"
+          "html": "<p>Aby potwierdzić przynależność danego adresu do parafii, prosimy o kontakt z kancelarią parafialną pod numerem <a href=\"tel:+48608186185\">608 186 185</a>, w godzinach jej otwarcia.</p>"
         }
       ],
       "group": "informacje",
@@ -123,7 +127,11 @@
       "sections": [
         {
           "title": "Proboszcz",
-          "html": "<p>Ks. Dariusz Korbik — proboszcz.</p>"
+          "html": "<div class=\"parish-profile\"><img src=\"/assets/parafia/dariusz-korbik.webp\" width=\"720\" height=\"960\" alt=\"Ks. Dariusz Korbik\" loading=\"lazy\" decoding=\"async\"><div><h3>Ks. Dariusz Korbik</h3></div></div>"
+        },
+        {
+          "title": "Wikariusze",
+          "html": "<div class=\"parish-profile\"><img src=\"/assets/parafia/adam-kurowski.webp\" width=\"720\" height=\"960\" alt=\"Ks. Adam Kurowski\" loading=\"lazy\" decoding=\"async\"><div><h3>Ks. Adam Kurowski</h3><p>Posługuje w naszej parafii od 26 sierpnia 2024 r. Święcenia kapłańskie przyjął 22 maja 1993 r. z rąk biskupa Kazimierza Romaniuka.</p><p>Od lat związany z Ruchem Rodzin Nazaretańskich. W wolnym czasie lubi grzybobranie, wędkowanie i pielęgnację drzew.</p></div></div><div class=\"parish-profile\"><img src=\"/assets/parafia/marek-karwacz.webp\" width=\"720\" height=\"960\" alt=\"Ks. Marek Karwacz\" loading=\"lazy\" decoding=\"async\"><div><h3>Ks. Marek Karwacz</h3><p>Posługuje w naszej parafii od 26 sierpnia 2026 r. Pochodzi z parafii Matki Bożej Częstochowskiej w Wołominie. Święcenia kapłańskie przyjął 30 maja 2009 r. z rąk arcybiskupa Henryka Hosera SAC. Ukończył Papieski Wydział Teologiczny w Warszawie z tytułem magistra teologii.</p><p>Wcześniej był wikariuszem w parafiach św. Jana Kantego w Legionowie (2009–2015), św. Antoniego z Padwy w Mińsku Mazowieckim (2015–2017), św. Ojca Pio w Zagościńcu (2017–2020) oraz św. Brata Alberta w Warszawie-Wesołej (od 2020 r.). Imieniny obchodzi 25 kwietnia.</p></div></div>"
         },
         {
           "title": "Kontakt z kancelarią",
@@ -233,7 +241,40 @@
       "intro": "Poznaj wspólnoty i inicjatywy związane z modlitwą, muzyką, formacją rodzinną i pomocą innym. Poniżej znajdziesz informacje o ich działalności i możliwościach zaangażowania.",
       "hero": "/assets/47cda0704598d028.webp",
       "image": "/assets/47cda0704598d028.webp",
-      "sections": [],
+      "sections": [
+        {
+          "title": "TOTUS TUUS",
+          "html": "<p>Zapraszamy mężczyzn zainteresowanych formacją i służbą Kościołowi lokalnemu i powszechnemu.</p><p><strong>Termin:</strong> 16. dnia każdego miesiąca, po wieczornej Mszy Świętej<br><strong>Miejsce:</strong> Sala ks. Tadeusza</p>"
+        },
+        {
+          "title": "Rodzinne Róże Różańcowe",
+          "html": "<p>Spotkania Rodzinnych Róż Różańcowych.</p><p><strong>Termin:</strong> Pierwsza niedziela miesiąca, 9:30<br><strong>Miejsce:</strong> Organistówka</p>"
+        },
+        {
+          "title": "Dziecięce Koło Różańcowe",
+          "html": "<p>Spotkania Dziecięcego Koła Różańcowego.</p><p><strong>Termin:</strong> Pierwsza niedziela miesiąca, po Mszy Świętej o 11:30<br><strong>Miejsce:</strong> Organistówka</p>"
+        },
+        {
+          "title": "Koła Żywego Różańca",
+          "html": "<p>Podczas wieczornej Mszy Świętej modlimy się za zmarłych członków Kół Żywego Różańca. Po Mszy i nabożeństwie odbywa się spotkanie.</p><p><strong>Termin:</strong> Pierwszy poniedziałek miesiąca<br><strong>Miejsce:</strong> Sala ks. Jerzego</p>"
+        },
+        {
+          "title": "Rodzina Radia Maryja",
+          "html": "<p>Wieczorna Msza Święta w stałych intencjach Rodziny Radia Maryja, a następnie spotkanie po Mszy i nabożeństwie.</p><p><strong>Termin:</strong> Pierwszy wtorek miesiąca<br><strong>Miejsce:</strong> Organistówka</p>"
+        },
+        {
+          "title": "Grupa AA",
+          "html": "<p>Anonimowi Alkoholicy są wspólnotą kobiet i mężczyzn, którzy dzielą się doświadczeniem, siłą i nadzieją, aby wspierać się w zdrowieniu z alkoholizmu.</p><p><strong>Termin:</strong> Środy, 18:00<br><strong>Miejsce:</strong> Organistówka</p>"
+        },
+        {
+          "title": "Ministranci i lektorzy",
+          "html": "<p>Spotkania ministrantów i lektorów.</p><p><strong>Termin:</strong> Soboty, 10:00<br><strong>Miejsce:</strong> Sala ks. Jerzego</p>"
+        },
+        {
+          "title": "Spotkania biblijne",
+          "html": "<p>Rozważanie słowa Bożego i przygotowanie do niedzielnej Liturgii Słowa. Spotkania prowadzi ks. proboszcz Dariusz Korbik.</p><p><strong>Termin:</strong> Środy, 19:40<br><strong>Miejsce:</strong> Salka na plebanii</p>"
+        }
+      ],
       "group": "informacje",
       "introHTML": "<p>Poznaj wspólnoty i inicjatywy związane z modlitwą, muzyką, formacją rodzinną i pomocą innym. Poniżej znajdziesz informacje o ich działalności i możliwościach zaangażowania.</p>",
       "cards": [
@@ -268,13 +309,13 @@
       "title": "O naszej parafii",
       "path": "/o-naszej-parafii",
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-3",
-      "intro": "Informacje o Mszach Świętych, kancelarii parafialnej, wspólnotach i spotkaniach w naszej parafii.",
+      "intro": "Parafia pw. Świętej Trójcy w Ząbkach jest miejscem wspólnej modlitwy, sprawowania sakramentów i spotkań wspólnot. Informacje o liturgii, kancelarii, duszpasterzach i możliwościach zaangażowania znajdują się w odpowiednich działach strony.",
       "hero": "/assets/47cda0704598d028.webp",
       "image": "/assets/6f3bc3b585d31f78.webp",
       "sections": [],
       "group": "informacje",
       "special": "about",
-      "introHTML": "<p>Informacje o Mszach Świętych, kancelarii parafialnej, wspólnotach i spotkaniach w naszej parafii.</p>",
+      "introHTML": "<p>Parafia pw. Świętej Trójcy w Ząbkach jest miejscem wspólnej modlitwy, sprawowania sakramentów i spotkań wspólnot. Informacje o liturgii, kancelarii, duszpasterzach i możliwościach zaangażowania znajdują się w odpowiednich działach strony.</p>",
       "cards": [
         {
           "title": "Harmonogram",
@@ -318,12 +359,20 @@
       "image": "/assets/aebb7ab4a4bc8f13.webp",
       "sections": [
         {
-          "title": "Znaczenie sakramentu",
-          "html": "<p>Chrzest włącza do wspólnoty Kościoła i rozpoczyna życie sakramentalne.</p>"
+          "title": "Terminy i zgłoszenie",
+          "html": "<p>Chrztu Świętego udzielamy podczas Mszy o 10:00 w drugą i czwartą niedzielę miesiąca, z wyjątkiem Wielkiego Postu, a także w Wielkanoc i Boże Narodzenie. Zamiar chrztu dziecka należy zgłosić odpowiednio wcześniej w kancelarii parafialnej.</p><p>Chrzest zasadniczo odbywa się w parafii zamieszkania rodziców. Jeżeli dziecko mieszka poza naszą parafią, należy dostarczyć pisemne pozwolenie własnego proboszcza. O przynależności do parafii decyduje faktyczne miejsce zamieszkania.</p>"
         },
         {
-          "title": "Kontakt z kancelarią",
-          "html": "{{SACRAMENT_CONTACT}}"
+          "title": "Dokumenty",
+          "html": "<p>Na tydzień przed chrztem rodzice zgłaszają się do kancelarii z dokumentami.</p><ul><li>Akt urodzenia dziecka z Urzędu Stanu Cywilnego.</li><li>Świadectwo sakramentu małżeństwa rodziców.</li><li>Zaświadczenia dopuszczające rodziców chrzestnych do pełnienia tej funkcji, wydane przez parafie ich aktualnego zamieszkania.</li></ul>"
+        },
+        {
+          "title": "Rodzice chrzestni",
+          "html": "<p>Wyznaczony rodzic chrzestny powinien spełniać następujące warunki.</p><ul><li>Mieć ukończone 16 lat.</li><li>Przyjąć chrzest, bierzmowanie i Eucharystię.</li><li>Być wierzącym i praktykującym katolikiem.</li><li>Być wolnym od kary kanonicznej.</li><li>Nie być ojcem ani matką chrzczonego dziecka.</li></ul><p>Przed wyborem rodziców chrzestnych prosimy sprawdzić, czy spełniają wymagania. Wątpliwości, także dotyczące sytuacji małżeńskiej kandydata, należy omówić w kancelarii parafialnej.</p>"
+        },
+        {
+          "title": "Katecheza i dzień chrztu",
+          "html": "<p>Rodzice dziecka i chrzestni należący do naszej parafii uczestniczą w katechezie przedchrzcielnej w kościele. Termin należy ustalić w kancelarii.</p><p>W dniu chrztu rodzice i chrzestni zgłaszają się do zakrystii 10 minut przed rozpoczęciem, aby podpisać akt chrztu i dopełnić brakujących formalności.</p>"
         }
       ],
       "group": "sakramenty",
@@ -339,12 +388,16 @@
       "image": "/assets/ff6e497cb05ede25.webp",
       "sections": [
         {
-          "title": "Znaczenie sakramentu",
-          "html": "<p>Bierzmowanie umacnia ochrzczonego darami Ducha Świętego.</p>"
+          "title": "Nabór i zgłoszenie",
+          "html": "<p>Przygotowanie do bierzmowania rozpoczyna się co roku jesienią. Mogą się zgłosić uczniowie klas VIII szkoły podstawowej oraz osoby starsze.</p><p>Termin spotkania organizacyjnego podajemy w <a href=\"/ogloszenia-parafialne\">ogłoszeniach parafialnych</a>. Na spotkaniu kandydaci wypełniają ankietę z podstawowymi danymi i zobowiązaniem do udziału w spotkaniach oraz praktykach religijnych.</p>"
         },
         {
-          "title": "Kontakt z kancelarią",
-          "html": "{{SACRAMENT_CONTACT}}"
+          "title": "Wymagane dokumenty",
+          "html": "<ul><li>Osoby ochrzczone poza naszą parafią dostarczają metrykę chrztu z parafii, w której przyjęły chrzest.</li><li>Osoby mieszkające poza naszą parafią dostarczają również zgodę parafii właściwej dla miejsca zamieszkania na przygotowanie i przyjęcie bierzmowania w naszej parafii.</li></ul>"
+        },
+        {
+          "title": "Przebieg przygotowania",
+          "html": "<p>Przygotowanie obejmuje 12 spotkań tematycznych, zwykle raz w miesiącu, oraz systematyczny udział w praktykach religijnych. Sakrament jest udzielany po zakończeniu przygotowania.</p>"
         }
       ],
       "group": "sakramenty",
@@ -362,6 +415,10 @@
         {
           "title": "Znaczenie sakramentu",
           "html": "<p>Eucharystia jest centrum życia chrześcijańskiego i spotkaniem z Chrystusem.</p>"
+        },
+        {
+          "title": "Godziny Mszy Świętych",
+          "html": "{{MASS_SCHEDULE}}"
         },
         {
           "title": "Kontakt z kancelarią",
@@ -402,12 +459,24 @@
       "image": "/assets/814151afbdefeb3b.webp",
       "sections": [
         {
-          "title": "Znaczenie sakramentu",
-          "html": "<p>Sakrament małżeństwa uświęca miłość i jedność małżonków.</p>"
+          "title": "Termin i parafia",
+          "html": "<p>Termin ślubu można zarezerwować z wyprzedzeniem. Formalności należy rozpocząć około trzech miesięcy przed ślubem w parafii narzeczonej lub narzeczonego.</p><p>O przynależności do parafii decyduje faktyczne miejsce zamieszkania. Zasadniczo ślub odbywa się w parafii jednego z narzeczonych. Zawarcie małżeństwa w innym kościele wymaga wcześniejszego uzgodnienia formalności i uzyskania odpowiedniej licencji.</p><p>Planując ślub w piątek, prosimy przed rezerwacją terminu omówić dodatkowe ustalenia w kancelarii parafialnej.</p>"
         },
         {
-          "title": "Kontakt z kancelarią",
-          "html": "{{SACRAMENT_CONTACT}}"
+          "title": "Dokumenty",
+          "html": "<p>Oboje narzeczeni przygotowują następujące dokumenty.</p><ul><li>Aktualne świadectwo chrztu z adnotacją „do ślubu kościelnego”. Termin ważności świadectwa należy potwierdzić w kancelarii.</li><li>Świadectwo bierzmowania, jeżeli nie ma o nim adnotacji na świadectwie chrztu.</li><li>Potwierdzenie ukończenia kursu przedmałżeńskiego lub aktualnego udziału w kursie.</li><li>Potwierdzenie udziału w trzech spotkaniach w poradni rodzinnej.</li><li>Świadectwo ukończenia katechizacji w zakresie szkoły średniej.</li><li>Przy ślubie konkordatowym zaświadczenie z USC stanowiące podstawę sporządzenia aktu małżeństwa.</li><li>Jeśli wcześniej zawarto małżeństwo cywilne, akt małżeństwa z USC.</li><li>W przypadku wdowieństwa metrykę śmierci współmałżonka.</li><li>Dowody osobiste do wglądu.</li></ul>"
+        },
+        {
+          "title": "Protokół i przygotowanie",
+          "html": "<p>Na podstawie dokumentów spisujemy protokół przedślubny i rozpoczynamy procedurę zapowiedzi. Po ich wygłoszeniu należy dostarczyć do kancelarii odpowiednie zaświadczenie.</p><p>Po spisaniu protokołu narzeczeni przystępują do spowiedzi i na początku informują, że jest to spowiedź przedślubna. Kolejna spowiedź powinna odbyć się w tygodniu poprzedzającym ślub.</p>"
+        },
+        {
+          "title": "Tydzień przed ślubem",
+          "html": "<p>W tygodniu przed ślubem narzeczeni zgłaszają się do kancelarii, aby spisać akt ślubu. Prosimy przygotować imiona, nazwiska, wiek i adresy świadków. Świadkiem może być osoba pełnoletnia, mająca zdolność do podejmowania czynności prawnych.</p>"
+        },
+        {
+          "title": "Dzień ślubu i formalności cywilne",
+          "html": "<p>Narzeczeni i świadkowie zgłaszają się do zakrystii 15 minut przed ślubem, aby złożyć podpisy. Prosimy przynieść obrączki i kartki od spowiedzi narzeczonych.</p><p>Przy ślubie konkordatowym nowożeńcy otrzymują zaświadczenie o zawarciu małżeństwa. Dokumenty potrzebne do rejestracji małżeństwa trafiają do USC, gdzie następnie można uzyskać odpis aktu małżeństwa.</p>"
         }
       ],
       "group": "sakramenty",
@@ -448,8 +517,16 @@
           "html": "<p>Pogrzeb jest posługą liturgiczną, w której Kościół modli się za osobę zmarłą.</p>"
         },
         {
-          "title": "Kontakt z kancelarią",
-          "html": "{{SACRAMENT_CONTACT}}"
+          "title": "Kolejność formalności",
+          "html": "<p>Najpierw należy powiadomić duszpasterza parafii oraz zarządcę cmentarza parafialnego. Następnie można dopełnić formalności w zakładzie pogrzebowym.</p>{{SACRAMENT_CONTACT}}"
+        },
+        {
+          "title": "Wymagane dokumenty",
+          "html": "<ul><li>Akt zgonu z Urzędu Stanu Cywilnego.</li><li>Dokument potwierdzający przyjęcie sakramentu chorych przed śmiercią, na przykład od kapelana szpitala.</li></ul>"
+        },
+        {
+          "title": "Sakrament chorych",
+          "html": "<p>Rodzinę prosimy o kontakt z duszpasterzem, gdy chory może jeszcze przyjąć <a href=\"/namaszczenie-chorych\">sakrament namaszczenia chorych</a>. Jest on przeznaczony dla osób żyjących, którym z powodu choroby lub podeszłego wieku grozi niebezpieczeństwo śmierci. Warto zgłosić się odpowiednio wcześnie, by chory mógł pojednać się z Bogiem.</p>"
         }
       ],
       "group": "sakramenty",
@@ -469,8 +546,8 @@
           "html": "<p>Sakrament pokuty i pojednania jest spotkaniem z Bożym miłosierdziem.</p>"
         },
         {
-          "title": "Kontakt z kancelarią",
-          "html": "{{SACRAMENT_CONTACT}}"
+          "title": "Godziny spowiedzi",
+          "html": "{{CONFESSION_INFO}}"
         }
       ],
       "group": "sakramenty",
@@ -487,11 +564,11 @@
       "sections": [
         {
           "title": "Historia chóru",
-          "html": "<p>Chór Parafialny Carmina został założony w kwietniu 1968 roku przez ówczesnego proboszcza, śp. ks. Tadeusza Karolaka. Z zespołu młodzieżowego, przez okres działalności w składzie żeńskim i z towarzyszeniem gitar, rozwinął się w chór mieszany śpiewający w pełnym czterogłosie. Łączy osoby w wieku od 13 do ponad 50 lat.</p>"
+          "html": "<p>Chór Parafialny Carmina został założony w kwietniu 1968 roku przez ówczesnego proboszcza, śp. ks. Tadeusza Karolaka. Z zespołu młodzieżowego, przez okres działalności w składzie żeńskim i z towarzyszeniem gitar, rozwinął się w chór mieszany śpiewający w pełnym czterogłosie. Łączy osoby w wieku od 13 do ponad 50 lat.</p><p>Chór zaczynał od śpiewu na dwa głosy, potem śpiewał na trzy, a dziś na cztery. Od 1971 r. przez wiele lat śpiewał raz w miesiącu podczas dodatkowej niedzielnej Mszy dla grup parafialnych.</p>"
         },
         {
           "title": "Muzyka i wspólnota",
-          "html": "<p>Chór zapewnia oprawę muzyczną świąt i uroczystości oraz niedzielnej Mszy Świętej. Przygotowuje koncerty kolęd, pieśni pasyjnych, maryjnych i patriotycznych oraz muzyczne drogi krzyżowe. Część chórzystów współtworzy również parafialną Grupę Uwielbieniową.</p>"
+          "html": "<p>Chór zapewnia oprawę muzyczną świąt i uroczystości oraz niedzielnej Mszy Świętej, podczas której występuje z instrumentalistami. Przygotowuje koncerty kolęd, pieśni pasyjnych, maryjnych i patriotycznych oraz muzyczne drogi krzyżowe. Część chórzystów współtworzy również parafialną Grupę Uwielbieniową.</p>"
         },
         {
           "title": "Koncerty i kronika",
@@ -507,7 +584,7 @@
         },
         {
           "title": "Próby i zaproszenie",
-          "html": "<p><strong>Próby:</strong> czwartki o 19:00.<br><strong>Miejsce:</strong> Organistówka — salka przyparafialna.<br>Nie trzeba mieć profesjonalnego wykształcenia muzycznego. Liczą się chęci, słuch muzyczny i serce do śpiewu.</p>"
+          "html": "<p><strong>Próby:</strong> czwartki o 19:00.<br><strong>Miejsce:</strong> Organistówka — salka przyparafialna.<br>Nie trzeba mieć profesjonalnego wykształcenia muzycznego. Liczą się chęci, słuch muzyczny i serce do śpiewu.</p><p><a href=\"https://www.facebook.com/carmina.zabki\" target=\"_blank\" rel=\"noopener\">Chór Carmina na Facebooku</a></p>"
         }
       ],
       "group": "wspolnoty",
@@ -525,15 +602,23 @@
       "sections": [
         {
           "title": "O ruchu",
-          "html": "<p>Domowy Kościół jest małżeńsko-rodzinnym ruchem świeckich działającym w ramach Ruchu Światło–Życie. Jest skierowany do małżeństw sakramentalnych i wspiera świadome przeżywanie wiary w codziennym życiu.</p>"
+          "html": "<p>Domowy Kościół jest małżeńsko-rodzinnym ruchem świeckich działającym w ramach Ruchu Światło–Życie. Jest skierowany do małżeństw sakramentalnych i wspiera świadome przeżywanie wiary w codziennym życiu.</p><p>Ruch pomaga także ożywiać wspólnoty parafialne i diecezjalne.</p>"
         },
         {
           "title": "Formacja małżeńska",
           "html": "<p>Formacja pomaga umacniać miłość i jedność małżeńską, wspólnie odnajdywać Chrystusa oraz tworzyć dobry klimat do wychowania dzieci. Obejmuje modlitwę, lekturę słowa Bożego, życie sakramentalne, rekolekcje, poznawanie współmałżonka i pracę nad sobą. Ważnym elementem są comiesięczne spotkania w grupie małżeństw wspierających się na drodze wiary.</p>"
         },
         {
+          "title": "Kontakt",
+          "html": "<p>Zainteresowanych małżonków zapraszamy do kontaktu. Terminy spotkań są ustalane indywidualnie.</p><p><a href=\"mailto:pararejonowamarkizabki@gmail.com\">pararejonowamarkizabki@gmail.com</a></p>"
+        },
+        {
           "title": "Przydatne odnośniki",
           "html": "<ul><li><a href=\"https://oazapraga.pl/\" target=\"_blank\" rel=\"noopener\">Domowy Kościół diecezji warszawsko-praskiej</a></li><li><a href=\"https://randkamalzenska.pl/\" target=\"_blank\" rel=\"noopener\">Randka Małżeńska</a></li><li><a href=\"https://wirtualnachoinka.pl/\" target=\"_blank\" rel=\"noopener\">Wirtualna Choinka</a></li><li><a href=\"https://www.dk.oaza.pl/\" target=\"_blank\" rel=\"noopener\">Strona krajowa Domowego Kościoła</a></li></ul>"
+        },
+        {
+          "title": "Domowy Kościół w Ruchu Światło–Życie",
+          "html": "<figure class=\"parish-graphic\"><img src=\"/assets/parafia/domowy-kosciol-formacja.webp\" width=\"1108\" height=\"739\" alt=\"Ilustracja Domowego Kościoła z motywami rodziny, relacji, modlitwy i Biblii\" loading=\"lazy\" decoding=\"async\"></figure><figure class=\"parish-graphic\"><img src=\"/assets/parafia/domowy-kosciol-znak.webp\" width=\"558\" height=\"110\" alt=\"Domowy Kościół – gałąź rodzinna Ruchu Światło–Życie\" loading=\"lazy\" decoding=\"async\"></figure>"
         }
       ],
       "group": "wspolnoty",
@@ -568,6 +653,10 @@
         {
           "title": "Adres i gospodarze",
           "html": "<p><strong>Adres Saloniku:</strong> ul. Józefa Piłsudskiego 27, Ząbki.<br><strong>Gospodarze:</strong> Siostry ze Zgromadzenia Miłosierdzia Bożego i wolontariusze Fundacji Misja Miłosierdzia.</p>"
+        },
+        {
+          "title": "Rękodzieło dla dzieci",
+          "html": "<p>Zajęcia rękodzielnicze dla dzieci ze szkoły podstawowej odbywają się w poniedziałki o 17:00.</p><p><a href=\"https://zgromadzeniemilosierdziabozego.pl/\" target=\"_blank\" rel=\"noopener\">Zgromadzenie Miłosierdzia Bożego</a><br><a href=\"https://www.facebook.com/profile.php?id=100088104196019\" target=\"_blank\" rel=\"noopener\">Salonik Dobrego Słowa na Facebooku</a></p>"
         }
       ],
       "group": "wspolnoty",
@@ -597,12 +686,32 @@
         },
         {
           "title": "Termin spotkań",
-          "html": "<p><strong>Termin:</strong> pierwsza niedziela miesiąca o 19:00.<br>Jeśli w tym terminie przypada inne ważne święto lub uroczystość, zmiana jest wcześniej podawana w ogłoszeniach parafialnych.</p>"
+          "html": "{{WORSHIP_INFO}}"
+        },
+        {
+          "title": "Plakaty",
+          "html": "<div class=\"parish-gallery\"><figure><img src=\"/assets/parafia/wieczory-uwielbienia-przebieg.webp\" width=\"1000\" height=\"1500\" alt=\"Plakat Wieczorów Uwielbienia opisujący przebieg spotkania\" loading=\"lazy\" decoding=\"async\"><figcaption>Zaproszenie na Wieczory Uwielbienia</figcaption></figure><figure><img src=\"/assets/parafia/wieczory-uwielbienia-zaproszenie.webp\" width=\"1000\" height=\"1500\" alt=\"Plakat z zaproszeniem na Wieczór Uwielbienia w Ząbkach\" loading=\"lazy\" decoding=\"async\"><figcaption>Wieczór Uwielbienia w parafii Świętej Trójcy</figcaption></figure></div>"
         }
       ],
       "group": "wspolnoty",
       "status": "published",
       "introHTML": "<p>Wspólna modlitwa, śpiew i adoracja Najświętszego Sakramentu. Spotkania odbywają się w pierwszą niedzielę miesiąca o 19:00.</p>"
+    },
+    {
+      "kind": "information",
+      "title": "Standardy ochrony małoletnich",
+      "path": "/standardy-ochrony-maloletnich",
+      "intro": "Standardy ochrony małoletnich w Parafii pw. Świętej Trójcy w Ząbkach.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "group": "informacje",
+      "status": "draft",
+      "sections": [
+        {
+          "title": "Dokument parafialny",
+          "html": "<p>Standardy ochrony małoletnich z 15 sierpnia 2024 r.</p><p><a class=\"template-button\" href=\"/dokumenty/standardy-ochrony-maloletnich.pdf\">Otwórz pełny dokument (PDF, 27 stron)</a></p>"
+        }
+      ]
     }
   ],
   "aliases": {
