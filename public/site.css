@@ -263,6 +263,28 @@ body.page-fallback{animation-name:parish-fallback-in}
 /* Wix hid this image below 750px; retain the photographic frame on phones too. */
 #comp-mj6csj4i1{display:block!important}
 
+/* Clip the parish photo into the asymmetric Latin cross shown in the reference. */
+#comp-mk5xfv60{display:none!important}
+#comp-mj6csj4q3.donation-copy::before{
+ content:"";
+ position:absolute;
+ z-index:0;
+ left:50%;
+ top:50%;
+ width:min(240px,44%);
+ height:auto;
+ aspect-ratio:438 / 698;
+ transform:translate(-50%,-50%);
+ pointer-events:none;
+ opacity:.15;
+ background:url('/assets/47cda0704598d028.webp') center/cover no-repeat;
+ clip-path:polygon(38.36% 0,61.42% 0,61.42% 22.92%,100% 22.92%,100% 38.11%,61.42% 38.11%,61.42% 100%,38.36% 100%,38.36% 38.11%,0 38.11%,0 22.92%,38.36% 22.92%);
+}
+#comp-mj6csj4q3.donation-copy>*{z-index:1}
+@media(max-width:600px){
+ #comp-mj6csj4q3.donation-copy::before{width:min(190px,48%);height:auto;aspect-ratio:438 / 698}
+}
+
 /* Information cards follow their copy instead of reserving a fixed height. */
 .information #comp-lk9ka405>.wixui-box{gap:18px!important;min-height:0!important}
 .information .info-grid p{margin:0!important;line-height:1.55!important}
@@ -270,3 +292,8 @@ body.page-fallback{animation-name:parish-fallback-in}
 .information .info-grid>.wixui-box>.wixui-rich-text:last-child{display:flex!important;flex:1 1 auto!important}
 .information .info-grid>.wixui-box>.wixui-rich-text:last-child>.wixui-rich-text__text{display:flex!important;flex-direction:column;justify-content:space-between;gap:14px;flex:1}
 .information .info-grid>.wixui-box>.wixui-rich-text:last-child p+p{margin-top:0!important}
+
+/* Keep every gallery slide and its image centered at all screen sizes. */
+#comp-mk656uh3 .gallery-track{display:flex!important;align-items:center;justify-content:flex-start}
+#comp-mk656uh3 .gallery-slide{display:flex!important;align-items:center;justify-content:center;flex:0 0 100%!important;min-width:0!important}
+#comp-mk656uh3 .gallery-slide img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center center!important;margin:auto!important}
