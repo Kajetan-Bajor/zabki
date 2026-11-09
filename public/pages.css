@@ -35,3 +35,8 @@
   .parish-profile img { width: min(100%, 240px); }
 }
 .parish-graphic + .parish-graphic { margin-top: 24px; }
+
+.template-page figcaption.template-ai-caption {
+  color: #4a4144;
+  font-size: 14px;
+}
