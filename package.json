@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "eslint .",
     "admin:prepare": "node scripts/admin-environment.mjs",
+    "admin:add-account": "node --env-file-if-exists=.env scripts/add-admin-account.mjs",
     "db:migrate": "node --env-file-if-exists=.env scripts/migrate-database.mjs",
     "test": "node --test tests/admin-environment.mjs",
     "test:blog": "node tests/blog-security.mjs"
