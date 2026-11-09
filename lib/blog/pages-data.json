@@ -187,49 +187,49 @@
           "title": "Chrzest",
           "intro": "Chrzest włącza do wspólnoty Kościoła i rozpoczyna życie sakramentalne.",
           "href": "/chrzest",
-          "image": "/assets/aebb7ab4a4bc8f13.webp"
+          "image": "/assets/sakramenty/chrzest.webp"
         },
         {
           "title": "Bierzmowanie",
           "intro": "Bierzmowanie umacnia ochrzczonego darami Ducha Świętego.",
           "href": "/bierzmowanie",
-          "image": "/assets/ff6e497cb05ede25.webp"
+          "image": "/assets/sakramenty/bierzmowanie.webp"
         },
         {
           "title": "Eucharystia",
           "intro": "Eucharystia jest centrum życia chrześcijańskiego i spotkaniem z Chrystusem.",
           "href": "/eucharystia",
-          "image": "/assets/1c14f8b782785d61.webp"
+          "image": "/assets/sakramenty/eucharystia.webp"
         },
         {
           "title": "Pokuta i pojednanie",
           "intro": "Sakrament pokuty i pojednania jest spotkaniem z Bożym miłosierdziem.",
           "href": "/pokuta-i-pojednanie",
-          "image": "/assets/a77fae764d98f43e.webp"
+          "image": "/assets/sakramenty/pokuta-i-pojednanie.webp"
         },
         {
           "title": "Kapłaństwo",
           "intro": "Sakrament święceń jest powołaniem do służby Bogu i wspólnocie Kościoła.",
           "href": "/kaplanstwo",
-          "image": "/assets/2cbd4330c9f982bb.webp"
+          "image": "/assets/sakramenty/kaplanstwo.webp"
         },
         {
           "title": "Małżeństwo",
           "intro": "Sakrament małżeństwa uświęca miłość i jedność małżonków.",
           "href": "/malzenstwo",
-          "image": "/assets/814151afbdefeb3b.webp"
+          "image": "/assets/sakramenty/malzenstwo.webp"
         },
         {
           "title": "Namaszczenie chorych",
           "intro": "Namaszczenie chorych przynosi duchowe umocnienie osobom chorym.",
           "href": "/namaszczenie-chorych",
-          "image": "/assets/ea7086583e38e13b.webp"
+          "image": "/assets/sakramenty/namaszczenie-chorych.webp"
         },
         {
           "title": "Pogrzeb",
           "intro": "Pogrzeb jest posługą liturgiczną, w której Kościół modli się za osobę zmarłą.",
           "href": "/pogrzeb",
-          "image": "/assets/58207faf5fbc5ac3.webp"
+          "image": "/assets/sakramenty/pogrzeb.webp"
         }
       ]
     },
@@ -356,7 +356,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/about",
       "intro": "Chrzest włącza do wspólnoty Kościoła i rozpoczyna życie sakramentalne.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/aebb7ab4a4bc8f13.webp",
+      "image": "/assets/sakramenty/chrzest.webp",
       "sections": [
         {
           "title": "Terminy i zgłoszenie",
@@ -385,7 +385,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/bierzmowanie",
       "intro": "Bierzmowanie umacnia ochrzczonego darami Ducha Świętego.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/ff6e497cb05ede25.webp",
+      "image": "/assets/sakramenty/bierzmowanie.webp",
       "sections": [
         {
           "title": "Nabór i zgłoszenie",
@@ -410,7 +410,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/eucharystia",
       "intro": "Eucharystia jest centrum życia chrześcijańskiego i spotkaniem z Chrystusem.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/e3499f17d3d26eaa.webp",
+      "image": "/assets/sakramenty/eucharystia.webp",
       "sections": [
         {
           "title": "Znaczenie sakramentu",
@@ -435,7 +435,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/kap%C5%82a%C5%84stwo",
       "intro": "Sakrament święceń jest powołaniem do służby Bogu i wspólnocie Kościoła.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/3535610474ae8641.webp",
+      "image": "/assets/sakramenty/kaplanstwo.webp",
       "sections": [
         {
           "title": "Znaczenie sakramentu",
@@ -456,7 +456,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/ma%C5%82%C5%BCe%C5%84stwo",
       "intro": "Sakrament małżeństwa uświęca miłość i jedność małżonków.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/814151afbdefeb3b.webp",
+      "image": "/assets/sakramenty/malzenstwo.webp",
       "sections": [
         {
           "title": "Termin i parafia",
@@ -489,7 +489,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/namaszczenie-chorych",
       "intro": "Namaszczenie chorych przynosi duchowe umocnienie osobom chorym.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/ea7086583e38e13b.webp",
+      "image": "/assets/sakramenty/namaszczenie-chorych.webp",
       "sections": [
         {
           "title": "Znaczenie sakramentu",
@@ -510,7 +510,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/pogrzeb",
       "intro": "Pogrzeb jest posługą liturgiczną, w której Kościół modli się za osobę zmarłą.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/58207faf5fbc5ac3.webp",
+      "image": "/assets/sakramenty/pogrzeb.webp",
       "sections": [
         {
           "title": "Posługa pogrzebowa",
@@ -539,7 +539,7 @@
       "source": "https://nemeris-studio.wixstudio.com/parafia-zabki/sakramenty-1/pokuta-i-pojednanie",
       "intro": "Sakrament pokuty i pojednania jest spotkaniem z Bożym miłosierdziem.",
       "hero": "/assets/47cda0704598d028.webp",
-      "image": "/assets/a77fae764d98f43e.webp",
+      "image": "/assets/sakramenty/pokuta-i-pojednanie.webp",
       "sections": [
         {
           "title": "Znaczenie sakramentu",
