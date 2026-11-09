@@ -75,7 +75,7 @@
         },
         {
           "title": "Pamięć i duchowa obecność",
-          "html": "<p class=\"font_8 wixui-rich-text__text\">Męczeńska śmierć w październiku 1984 roku stała się kamieniem węgielnym wolnej Polski. Beatyfikowany w 2010 roku, ks. Jerzy w szczególny sposób „powrócił” do Ząbek w 2012 roku wraz z wprowadzeniem jego relikwii do naszej świątyni. Dziś, jako Błogosławiony i Honorowy Obywatel Miasta, nieustannie otacza naszą wspólnotę swoją duchową opieką.</p>"
+          "html": "<p class=\"font_8 wixui-rich-text__text\">Męczeńska śmierć w październiku 1984 roku stała się kamieniem węgielnym wolnej Polski. Ks. Jerzy został beatyfikowany w 2010 roku. Dziś, jako Błogosławiony i Honorowy Obywatel Miasta, nieustannie otacza naszą wspólnotę swoją duchową opieką.</p>"
         }
       ],
       "group": "informacje",
@@ -252,7 +252,7 @@
         },
         {
           "title": "Dziecięce Koło Różańcowe",
-          "html": "<p>Spotkania Dziecięcego Koła Różańcowego.</p><p><strong>Termin:</strong> Pierwsza niedziela miesiąca, po Mszy Świętej o 11:30<br><strong>Miejsce:</strong> Organistówka</p>"
+          "html": "<p>Spotkania Dziecięcego Koła Różańcowego.</p><p><strong>Termin:</strong> W zwykłym harmonogramie pierwsza niedziela miesiąca, po Mszy Świętej o 11:30<br><strong>Miejsce:</strong> Organistówka</p>"
         },
         {
           "title": "Koła Żywego Różańca",
@@ -709,7 +709,31 @@
       "sections": [
         {
           "title": "Dokument parafialny",
-          "html": "<p>Standardy ochrony małoletnich z 15 sierpnia 2024 r.</p><p><a class=\"template-button\" href=\"/dokumenty/standardy-ochrony-maloletnich.pdf\">Otwórz pełny dokument (PDF, 27 stron)</a></p>"
+          "html": "<p>Standardy ochrony małoletnich z 15 sierpnia 2024 r.</p><p><a class=\"template-button\" href=\"/dokumenty/standardy-ochrony-maloletnich.pdf\">Otwórz pełny dokument (PDF, 27 stron)</a></p><p><a class=\"template-button\" href=\"/dokumenty/standardy-ochrony-maloletnich.pdf\" download>Pobierz dokument (PDF)</a></p>"
+        },
+        {
+          "title": "Kontakt do osoby zaufanej",
+          "html": "<p>W sprawach ochrony małoletnich można zgłosić się do osoby zaufanej parafii, Damiana Żochowskiego.</p><p><a href=\"tel:+48726184656\">726 184 656</a><br><a href=\"mailto:wsparcie.swtrojca_zabki@op.pl\">wsparcie.swtrojca_zabki@op.pl</a></p>"
+        }
+      ]
+    },
+    {
+      "kind": "information",
+      "title": "Prywatność i cookies",
+      "path": "/prywatnosc-i-cookies",
+      "intro": "Informacja o plikach cookies i zapisie danych w przeglądarce na stronie parafii.",
+      "hero": "/assets/47cda0704598d028.webp",
+      "image": "/assets/47cda0704598d028.webp",
+      "group": "informacje",
+      "status": "published",
+      "sections": [
+        {
+          "title": "Publiczne podstrony",
+          "html": "<p>Podczas przeglądania publicznych podstron aplikacja nie ustawia własnych plików cookies ani nie zapisuje polubień w pamięci lokalnej przeglądarki.</p><p>Odnośniki do Facebooka i mapy otwierają zewnętrzne serwisy. Po przejściu do nich obowiązują zasady danego serwisu.</p>"
+        },
+        {
+          "title": "Panel redakcyjny",
+          "html": "<p>Przy logowaniu do panelu redakcyjnego aplikacja używa cookies niezbędnych do zabezpieczenia formularza oraz utrzymania sesji.</p><ul><li><code>__Host-parafia_login</code> zabezpiecza formularz logowania i wygasa po 10 minutach.</li><li><code>__Host-parafia_admin</code> utrzymuje sesję. Podczas potwierdzania logowania wygasa po 5 minutach, a po zalogowaniu najpóźniej po 8 godzinach. Serwer wygasza sesję również po 30 minutach bezczynności.</li></ul><p>Ustawienia przeglądarki pozwalają usunąć lub zablokować cookies. Zablokowanie cookies panelu uniemożliwia logowanie.</p>"
         }
       ]
     }

@@ -71,13 +71,8 @@
  }
  if(tabs.length){selectTab(0);tabs.forEach((t,i)=>{t.addEventListener('click',()=>selectTab(i));t.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();let n=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;selectTab(n);tabs[n].focus();}});});}
  $$('[data-open-word]').forEach(a=>a.addEventListener('click',()=>selectTab(1)));
- $('#comp-mk5z79en16')?.addEventListener('click',()=>navigateTo('/wszystkie-posty'));
+ $('#comp-mk5z79en16')?.addEventListener('click',()=>navigateTo('/ogloszenia-parafialne'));
  $('#comp-mk5zijy216')?.addEventListener('click',()=>navigateTo('/historia-parafii'));
- $$('.like').forEach(b=>{
-  const key='parafia-like-'+b.dataset.post;
-  const render=()=>{let liked=false;try{liked=localStorage.getItem(key)==='true';}catch{}b.setAttribute('aria-pressed',String(liked));b.textContent=liked?'♥':'♡';};
-  b.addEventListener('click',()=>{try{localStorage.setItem(key,String(b.getAttribute('aria-pressed')!=='true'));}catch{}render();});render();
- });
  const gallery=$('.parish-gallery'),slides=$$('.gallery-slide');let index=0,lightbox=null,startX=null;
  function photo(next){if(!slides.length)return;index=(next+slides.length)%slides.length;$('.gallery-track').style.transform=`translateX(-${index*100}%)`;$('.gallery-counter').textContent=`${index+1} / ${slides.length}`;slides.forEach((s,i)=>{s.tabIndex=i===index?0:-1;s.setAttribute('aria-hidden',String(i!==index));});if(lightbox)$('img',lightbox).src=$('img',slides[index]).src;}
  function closePhoto(){lightbox?.remove();lightbox=null;document.body.classList.remove('menu-open');slides[index]?.focus();}

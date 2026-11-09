@@ -101,7 +101,10 @@ export async function publicPage(request: Request, path: string, data: PublicDat
   const origin = data.origin || url.origin;
   if (path === '/sitemap.xml') {
     const posts = await data.posts();
-    const paths = [...canonicalPaths, ...posts.map(post => '/post/' + encodeURIComponent(post.slug) + '/')];
+    const visiblePaths = new Set(canonicalPaths);
+    if (!posts.length) visiblePaths.delete('/wszystkie-posty');
+    if (!posts.some(post => post.category === 'slowo')) visiblePaths.delete('/slowo-na-dzis');
+    const paths = [...visiblePaths, ...posts.map(post => '/post/' + encodeURIComponent(post.slug) + '/')];
     const locations = [...new Set(paths)].map(path => '<url><loc>' + esc(origin + path) + '</loc></url>').join('');
     return response(request, '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + locations + '</urlset>', 200, 'application/xml; charset=utf-8');
   }
