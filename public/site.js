@@ -71,7 +71,6 @@
  }
  if(tabs.length){selectTab(0);tabs.forEach((t,i)=>{t.addEventListener('click',()=>selectTab(i));t.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();let n=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;selectTab(n);tabs[n].focus();}});});}
  $$('[data-open-word]').forEach(a=>a.addEventListener('click',()=>selectTab(1)));
- $('#comp-mk5z79en16')?.addEventListener('click',()=>navigateTo('/ogloszenia-parafialne'));
  $('#comp-mk5zijy216')?.addEventListener('click',()=>navigateTo('/historia-parafii'));
  const gallery=$('.parish-gallery'),slides=$$('.gallery-slide');let index=0,lightbox=null,startX=null;
  function photo(next){if(!slides.length)return;index=(next+slides.length)%slides.length;$('.gallery-track').style.transform=`translateX(-${index*100}%)`;$('.gallery-counter').textContent=`${index+1} / ${slides.length}`;slides.forEach((s,i)=>{s.tabIndex=i===index?0:-1;s.setAttribute('aria-hidden',String(i!==index));});if(lightbox)$('img',lightbox).src=$('img',slides[index]).src;}
@@ -115,7 +114,7 @@
 (() => {
  if(!document.querySelector('.hero')||!('IntersectionObserver' in window))return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');if(reduced.matches)return;
- const groups=[...document.querySelectorAll('.news-copy,.history-portrait,.history-copy,.gallery-copy,.parish-gallery,.scripture-copy,.information-copy,.info-grid>.wixui-box,#comp-mj6j692c')];
+ const groups=[...document.querySelectorAll('.history-portrait,.history-copy,.gallery-copy,.parish-gallery,.scripture-copy,.information-copy,.info-grid>.wixui-box,#comp-mj6j692c')];
  const observer=new IntersectionObserver(entries=>{for(const {target,isIntersecting} of entries){if(!isIntersecting)continue;target.classList.remove('home-enter-pending');observer.unobserve(target)}},{threshold:.08,rootMargin:'0px 0px -24px 0px'});
  groups.forEach((element,index)=>{if(element.getBoundingClientRect().top<innerHeight)return;element.style.setProperty('--home-enter-delay',element.parentElement?.classList.contains('info-grid')?`${index%4*70}ms`:'0ms');element.classList.add('home-enter','home-enter-pending');observer.observe(element)});
  reduced.addEventListener('change',()=>{if(reduced.matches){groups.forEach(e=>e.classList.remove('home-enter-pending'));observer.disconnect()}});

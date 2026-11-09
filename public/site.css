@@ -241,17 +241,13 @@ body.page-fallback{animation-name:parish-fallback-in}
  .information #comp-lk9ka405.info-grid{padding:0;gap:20px!important;box-sizing:border-box}
  .information #comp-lk9ka405>.wixui-box{min-height:0!important}
 }
-/* The photo is the frame: foreground content must never determine its crop. */
+/* Keep the donation callout in a separate panel. */
 .donation>.max-width-container{display:block!important;position:relative!important;height:auto!important;min-height:0!important;padding:67px!important;box-sizing:border-box!important}
 #comp-mj6csj3u.donation{height:auto!important;min-height:0!important}
-#comp-mj6csj48{position:relative!important;display:block!important;min-height:0!important;height:auto!important;width:100%!important;margin:0!important;overflow:hidden!important;border-radius:24px!important;isolation:isolate}
+#comp-mj6csj48{background:#f3e8ec;position:relative!important;display:block!important;min-height:0!important;height:auto!important;width:100%!important;margin:0!important;overflow:hidden!important;border-radius:24px!important;isolation:isolate}
 #comp-mj6csj48>.comp-mj6csj48-container{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:auto!important;min-height:566px!important;padding:60px 0!important;box-sizing:border-box!important;gap:0!important}
-#comp-mj6csj4i1{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;z-index:0!important}
-#comp-mj6csj4i1 img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:73% 38%!important}
 #comp-mj6j692c{position:relative!important;display:block!important;width:51.025%!important;max-width:none!important;min-width:0!important;height:auto!important;min-height:0!important;margin:0!important;padding:20px!important;flex:none!important;z-index:1;box-sizing:border-box!important}
 #comp-mj6j692c>.comp-mj6j692c-container{position:relative!important;display:block!important;width:100%!important;height:auto!important;min-height:0!important;padding:0!important;box-sizing:border-box!important}
-#comp-mk5xfv60{position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;width:44%!important;max-width:240px!important;height:calc(100% - 80px)!important;max-height:390px!important;margin:0!important;pointer-events:none!important}
-#comp-mk5xfv60 img{width:100%!important;height:100%!important;object-fit:contain!important}
 #comp-mj6csj4q3.donation-copy{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:40px!important;width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:64px 40px!important;box-sizing:border-box!important}
 .donation-copy>.wixui-rich-text{position:relative!important;grid-area:auto!important;width:100%!important;height:auto!important;min-height:0!important;margin:0!important;min-width:0!important}
 .donation-copy p,.donation-copy h2{text-align:center!important;overflow-wrap:break-word}
@@ -260,11 +256,6 @@ body.page-fallback{animation-name:parish-fallback-in}
 .home-enter{transition:opacity .65s cubic-bezier(.22,.61,.36,1),translate .65s cubic-bezier(.22,.61,.36,1);transition-delay:var(--home-enter-delay,0ms)}
 .home-enter-pending{opacity:0;translate:0 20px}
 @media(prefers-reduced-motion:reduce){.home-enter{transition:none!important}.home-enter-pending{opacity:1!important;translate:none!important}}
-/* Wix hid this image below 750px; retain the photographic frame on phones too. */
-#comp-mj6csj4i1{display:block!important}
-
-/* Clip the parish photo into the asymmetric Latin cross shown in the reference. */
-#comp-mk5xfv60{display:none!important}
 #comp-mj6csj4q3.donation-copy::before{
  content:"";
  position:absolute;
@@ -277,7 +268,7 @@ body.page-fallback{animation-name:parish-fallback-in}
  transform:translate(-50%,-50%);
  pointer-events:none;
  opacity:.15;
- background:url('/assets/47cda0704598d028.webp') center/cover no-repeat;
+ background:#8d0b41;
  clip-path:polygon(38.36% 0,61.42% 0,61.42% 22.92%,100% 22.92%,100% 38.11%,61.42% 38.11%,61.42% 100%,38.36% 100%,38.36% 38.11%,0 38.11%,0 22.92%,38.36% 22.92%);
 }
 #comp-mj6csj4q3.donation-copy>*{z-index:1}
@@ -311,3 +302,67 @@ body.blog-page{margin:0;background:#faf6ef;color:#011638;font-family:Arial,Helve
 .blog-main .parish-post-content ol li{padding-left:.35em;margin-bottom:.85em}
 .blog-page .post-back:focus-visible{outline:2px solid #8d0b41;outline-offset:4px}
 @media(max-width:600px){.blog-main{padding-top:96px;padding-bottom:44px}.blog-main>h1{margin-bottom:28px}}
+
+#comp-lk9jshjq.parish-news {
+ display: block;
+ min-height: 0;
+ background: #fff;
+ color: #011638;
+}
+.parish-news-layout {
+ display: grid;
+ grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+ align-items: start;
+ gap: clamp(32px, 5vw, 80px);
+ max-width: 1600px;
+ margin-inline: auto;
+ padding: clamp(44px, 6vw, 92px) clamp(18px, 5vw, 67px);
+ box-sizing: border-box;
+}
+.parish-news-copy { font: 16px/1.6 Arial, Helvetica, sans-serif; }
+.parish-news-copy .parish-news-eyebrow {
+ font: 400 15px/1.5 Georgia, serif;
+ text-transform: uppercase;
+ margin: 0 0 16px;
+}
+.parish-news-copy h2 {
+ font: 400 clamp(32px, 3.6vw, 50px)/1.12 wf_c81b8f120cdb4b8fb56d8e9fc, Georgia, serif;
+ margin: 0 0 20px;
+}
+.parish-news-copy h2 span { color: #8d0b41; }
+.parish-news-copy p { margin: 0 0 24px; }
+.parish-news-button {
+ display: inline-block;
+ padding: 13px 16px;
+ border-radius: 6px;
+ background: #8d0b41;
+ color: #fff;
+ text-decoration: none;
+}
+.parish-news-button:hover { background: #690a32; }
+.parish-news-feed { min-width: 0; }
+.parish-news-feed .announcement { box-sizing: border-box; }
+.parish-news-tabs {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin-bottom: 16px;
+}
+.parish-news-tabs button {
+ border: 1px solid #efe1ce;
+ border-radius: 5px;
+ background: #fff;
+ padding: 10px 12px;
+ color: inherit;
+ font: 14px/1.4 Arial, Helvetica, sans-serif;
+}
+.parish-news-tabs button[aria-selected="true"] { background: #f3e7eb; color: #8d0b41; }
+@media (min-width: 1101px) and (min-height: 680px) {
+ .parish-news-layout:has([role="tabpanel"]:not([hidden]) .announcement:nth-of-type(2)) .parish-news-copy {
+  position: sticky;
+  top: 112px;
+ }
+}
+@media (max-width: 850px) {
+ .parish-news-layout { grid-template-columns: minmax(0, 1fr); }
+}
