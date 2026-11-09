@@ -5,10 +5,38 @@ import { random } from './security';
 export async function initialized(env:Env){if(!env.databaseConfigured)return false;return !!await env.DB.prepare("SELECT value FROM settings WHERE key='posts_imported'").first()}
 const retiredImports=new Set(['original-1','original-2','original-3']);
 const isRetiredImport=(p:Post)=>retiredImports.has(p.id)&&p.version===1;
+const approvedSeeds=(seeds as Post[]).filter(p=>!isRetiredImport(p));
+const approvedIds=approvedSeeds.map(p=>p.id);
+const approvedSlugs=approvedSeeds.map(p=>p.slug);
+const published=(p:Post,now:number)=>p.status==='published'&&!p.deleted_at&&p.published_at<=now&&!isRetiredImport(p);
 async function retireOriginal(env:Env){await env.DB.prepare("UPDATE posts SET status='draft',deleted_at=?,updated_at=?,version=version+1 WHERE id IN ('original-1','original-2','original-3') AND version=1 AND deleted_at IS NULL").bind(Date.now(),Date.now()).run()}
-export async function importOriginal(env:Env){if(await initialized(env)){await retireOriginal(env);return;}const columns='id,slug,title,excerpt,content,category,author,image,status,published_at,created_at,updated_at,version,deleted_at';await env.DB.batch([...seeds.map(p=>env.DB.prepare(`INSERT INTO posts (${columns}) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING`).bind(...columns.split(',').map(k=>p[k as keyof typeof p]))),env.DB.prepare("INSERT INTO settings (key,value) VALUES ('posts_imported','1') ON CONFLICT(key) DO NOTHING")])}
-export async function publicPosts(env:Env,category?:Category){if(!await initialized(env))return (seeds as Post[]).filter(p=>p.status==='published'&&!p.deleted_at&&!isRetiredImport(p)&&(!category||p.category===category));const rows=await env.DB.prepare(`SELECT * FROM posts WHERE status='published' AND deleted_at IS NULL AND published_at<=? ${category?'AND category=?':''} ORDER BY published_at DESC,created_at DESC`).bind(Date.now(),...(category?[category]:[])).all<Post>();return rows.results.filter(p=>!isRetiredImport(p))}
-export async function publicPost(env:Env,slug:string){if(!await initialized(env))return (seeds as Post[]).find(p=>p.slug===slug&&p.status==='published'&&!p.deleted_at&&!isRetiredImport(p))||null;const post=await env.DB.prepare("SELECT * FROM posts WHERE slug=? AND status='published' AND deleted_at IS NULL AND published_at<=?").bind(slug,Date.now()).first<Post>();return post&&!isRetiredImport(post)?post:null}
+export async function importOriginal(env:Env){
+ const columns='id,slug,title,excerpt,content,category,author,image,status,published_at,created_at,updated_at,version,deleted_at';
+ const insert=(p:Post)=>env.DB.prepare(`INSERT INTO posts (${columns}) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT DO NOTHING`).bind(...columns.split(',').map(k=>p[k as keyof Post]));
+ if(await initialized(env)){
+  await retireOriginal(env);
+  if(approvedSeeds.length)await env.DB.batch(approvedSeeds.map(insert));
+  return;
+ }
+ await env.DB.batch([...(seeds as Post[]).map(insert),env.DB.prepare("INSERT INTO settings (key,value) VALUES ('posts_imported','1') ON CONFLICT(key) DO NOTHING")]);
+}
+export async function publicPosts(env:Env,category?:Category){
+ const now=Date.now(),visible=(p:Post)=>published(p,now)&&(!category||p.category===category);
+ if(!await initialized(env))return approvedSeeds.filter(visible).sort(byDate);
+ // A database record wins even when an editor has renamed, unpublished or deleted it.
+ const {results}=await env.DB.prepare(`SELECT * FROM posts WHERE (status='published' AND deleted_at IS NULL AND published_at<=? ${category?'AND category=?':''}) OR id=ANY(?::text[]) OR slug=ANY(?::text[])`)
+  .bind(now,...(category?[category]:[]),approvedIds,approvedSlugs).all<Post>();
+ const ids=new Set(results.map(p=>p.id)),slugs=new Set(results.map(p=>p.slug));
+ return [...results,...approvedSeeds.filter(p=>!ids.has(p.id)&&!slugs.has(p.slug))].filter(visible).sort(byDate);
+}
+const byDate=(a:Post,b:Post)=>b.published_at-a.published_at||b.created_at-a.created_at;
+export async function publicPost(env:Env,slug:string){
+ const now=Date.now(),seed=approvedSeeds.find(p=>p.slug===slug);
+ const fallback=seed&&published(seed,now)?seed:null;
+ if(!await initialized(env))return fallback;
+ const post=await env.DB.prepare("SELECT * FROM posts WHERE slug=? OR id=? ORDER BY (slug=?) DESC LIMIT 1").bind(slug,seed?.id??null,slug).first<Post>();
+ return post?(post.slug===slug&&published(post,now)?post:null):fallback;
+}
 export async function adminPosts(env:Env){await importOriginal(env);return (await env.DB.prepare('SELECT * FROM posts ORDER BY updated_at DESC').all<Post>()).results}
 export async function validatedPost(env:Env,data:any){if(!data||typeof data!=='object'||Array.isArray(data))throw new HttpError(400,'Nieprawidłowe dane wpisu.');const field=(name:string,max:number,min=0)=>{if(typeof data[name]!=='string')throw new HttpError(400,`Uzupełnij pole: ${name}.`);const value=data[name].trim();if(value.length<min||value.length>max)throw new HttpError(400,`Nieprawidłowa długość pola: ${name}.`);return value};const title=field('title',180,1),slug=field('slug',120,1),content=field('content',60000,1),excerpt=field('excerpt',600),author=field('author',100,1),image=field('image',200);if(!/^[\p{L}\p{N}]+(?:-[\p{L}\p{N}]+)*$/u.test(slug))throw new HttpError(400,'Adres wpisu może zawierać litery, cyfry i łączniki.');if(!['ogloszenia','slowo'].includes(data.category)||!['draft','published'].includes(data.status))throw new HttpError(400,'Wybierz poprawną kategorię i stan publikacji.');if(image){if(/^\/assets\/[a-f0-9]+\.(webp|png|jpg|jpeg|avif)$/.test(image)){
  // Existing locally hosted images are preserved; arbitrary origins are rejected.
