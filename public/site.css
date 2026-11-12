@@ -244,7 +244,7 @@ body.page-fallback{animation-name:parish-fallback-in}
 /* Keep the donation callout in a separate panel. */
 .donation>.max-width-container{display:block!important;position:relative!important;height:auto!important;min-height:0!important;padding:67px!important;box-sizing:border-box!important}
 #comp-mj6csj3u.donation{height:auto!important;min-height:0!important}
-#comp-mj6csj48{background:#f3e8ec;position:relative!important;display:block!important;min-height:0!important;height:auto!important;width:100%!important;margin:0!important;overflow:hidden!important;border-radius:24px!important;isolation:isolate}
+#comp-mj6csj48{position:relative!important;display:block!important;min-height:0!important;height:auto!important;width:100%!important;margin:0!important}
 #comp-mj6csj48>.comp-mj6csj48-container{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:auto!important;min-height:566px!important;padding:60px 0!important;box-sizing:border-box!important;gap:0!important}
 #comp-mj6j692c{position:relative!important;display:block!important;width:51.025%!important;max-width:none!important;min-width:0!important;height:auto!important;min-height:0!important;margin:0!important;padding:20px!important;flex:none!important;z-index:1;box-sizing:border-box!important}
 #comp-mj6j692c>.comp-mj6j692c-container{position:relative!important;display:block!important;width:100%!important;height:auto!important;min-height:0!important;padding:0!important;box-sizing:border-box!important}
