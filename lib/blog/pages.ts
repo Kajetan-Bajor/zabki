@@ -15,7 +15,18 @@ function crumb(p:Page){return `<div class="template-crumb"><a href="/">Strona g�
 function contact(){return `<aside class="template-contact"><span class="template-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M6 9h12"/></svg></span><span class="template-eyebrow">JESTEŚMY DLA CIEBIE</span><h2>Porozmawiajmy<br>w kancelarii.</h2><p>Informacje i pomoc w sprawach parafialnych.</p><a href="${phoneLink}">${phone} ${arrow}</a><small>Prosimy dzwonić w godzinach pracy kancelarii.</small></aside>`}
 function side(p:Page){return `<aside class="template-side"><nav class="template-toc" aria-label="Na tej stronie"><span class="template-eyebrow">NA TEJ STRONIE</span>${p.sections.map((s,i)=>`<a href="#sekcja-${i+1}"><span>${number(i)}</span>${esc(s.title)}</a>`).join('')}<a href="/kontakt">Kontakt z parafią ${arrow}</a></nav>${contact()}</aside>`}
 function sections(p:Page){return p.sections.map((s,i)=>`<section id="sekcja-${i+1}" class="template-text-section template-reveal"><div class="template-section-label"><span>${number(i)}</span><i></i></div><h2>${esc(s.title)}</h2>${resolveContent(s.html)}</section>`).join('')}
-function cards(p:Page){return `<div class="template-card-grid">${(p.cards||[]).map((c,i)=>`<article class="template-card template-reveal"><div class="template-card-copy"><span class="template-card-number" aria-hidden="true">${number(i)}</span><h2><a href="${esc(c.href)}">${esc(c.title)}</a></h2><p>${esc(c.intro)}</p><a href="${esc(c.href)}">Dowiedz się więcej <span>${arrow}</span></a></div></article>`).join('')}</div>`}
+function cards(p:Page, showSacramentImages=false){
+ const items=(p.cards??[]).map((card,i)=>{
+  const href=esc(card.href);
+  const title=esc(card.title);
+  const image=showSacramentImages?pages.find(page=>page.path===card.href&&page.group==='sakramenty')?.image:undefined;
+  const badge=`<span aria-hidden="true">${number(i)}</span>`;
+  const cover=image?`<a class="template-card-image" href="${href}" aria-label="${title}"><img src="${esc(image)}" alt="" loading="lazy">${badge}</a>`:'';
+  const textBadge=image?'':`<span class="template-card-number" aria-hidden="true">${number(i)}</span>`;
+  return `<article class="template-card template-reveal">${cover}<div class="template-card-copy">${textBadge}<h2><a href="${href}">${title}</a></h2><p>${esc(card.intro)}</p><a href="${href}">Dowiedz się więcej <span>${arrow}</span></a></div></article>`;
+ });
+ return `<div class="template-card-grid">${items.join('')}</div>`;
+}
 function detail(p:Page){
  const caption=p.group==='sakramenty'
   ?'<figcaption class="template-ai-caption">Ilustracja wygenerowana przez AI</figcaption>'
@@ -25,7 +36,7 @@ function listing(p:Page){
  const count=(p.cards?.length??0)+p.sections.length;
  const isSacraments=p.path==='/sakramenty';
  const details=p.sections.length?`<div class="template-reading template-community-sections">${sections(p)}</div>`:'';
- return `<section class="template-list-hero"><div class="template-wrap">${crumb(p)}<div class="template-centered"><span class="template-eyebrow">ŻYCIE NASZEJ PARAFII</span><h1>${esc(p.title)}<span>${isSacraments?'Blisko Boga. Przez całe życie.':'Twoje miejsce we wspólnocie.'}</span></h1><p>${esc(p.intro)}</p></div></div></section><section class="template-wrap template-catalog"><div class="template-catalog-heading"><p>Znajdź informacje, których potrzebujesz.${isSacraments?'<br>Ilustracje na stronach sakramentów wygenerowano przez AI':''}</p><span>${count?`${count} ${isSacraments?'sakramentów i posług':'wspólnot i inicjatyw'}`:''}</span></div>${p.cards?.length?cards(p):'<div class="template-note"><p>Informacje o aktualnych wspólnotach i ich spotkaniach uzyskasz w kancelarii parafialnej. Zapraszamy do kontaktu.</p></div>'}${details}<div class="template-bottom-callout"><div><span class="template-eyebrow">JESTEŚMY DLA CIEBIE</span><h2>Masz pytania?</h2><p>Zapraszamy do kontaktu z kancelarią parafialną.</p></div><a class="template-button" href="/kontakt">Skontaktuj się z nami ${arrow}</a></div></section>`}
+ return `<section class="template-list-hero"><div class="template-wrap">${crumb(p)}<div class="template-centered"><span class="template-eyebrow">ŻYCIE NASZEJ PARAFII</span><h1>${esc(p.title)}<span>${isSacraments?'Blisko Boga. Przez całe życie.':'Twoje miejsce we wspólnocie.'}</span></h1><p>${esc(p.intro)}</p></div></div></section><section class="template-wrap template-catalog"><div class="template-catalog-heading"><p>Znajdź informacje, których potrzebujesz.${isSacraments?'<br>Ilustracje w tym dziale wygenerowano przez AI':''}</p><span>${count?`${count} ${isSacraments?'sakramentów i posług':'wspólnot i inicjatyw'}`:''}</span></div>${p.cards?.length?cards(p,isSacraments):'<div class="template-note"><p>Informacje o aktualnych wspólnotach i ich spotkaniach uzyskasz w kancelarii parafialnej. Zapraszamy do kontaktu.</p></div>'}${details}<div class="template-bottom-callout"><div><span class="template-eyebrow">JESTEŚMY DLA CIEBIE</span><h2>Masz pytania?</h2><p>Zapraszamy do kontaktu z kancelarią parafialną.</p></div><a class="template-button" href="/kontakt">Skontaktuj się z nami ${arrow}</a></div></section>`}
 const date=(s:string)=>new Intl.DateTimeFormat('pl-PL',{day:'numeric',month:'long',year:'numeric',weekday:'long',timeZone:'Europe/Warsaw'}).format(new Date(s));
 const time=(s:string)=>new Intl.DateTimeFormat('pl-PL',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Warsaw'}).format(new Date(s));
 const events=()=>pages.filter(p=>p.event).sort((a,b)=>a.event!.start.localeCompare(b.event!.start));
