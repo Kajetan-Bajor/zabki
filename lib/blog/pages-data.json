@@ -271,6 +271,31 @@
           "title": "Wieczory Uwielbienia",
           "intro": "Wspólna modlitwa, śpiew i adoracja Najświętszego Sakramentu. Spotkania odbywają się w pierwszą niedzielę miesiąca o 19:00.",
           "href": "/wieczory-uwielbienia"
+        },
+        {
+          "title": "Schola dziecięca „Jutrzenka”",
+          "intro": "Zapraszamy wszystkie dzieci, które lubią śpiewać, także te, które jeszcze nie potrafią czytać. Próby odbywają się w niedziele o 10:45.",
+          "href": "/schola-jutrzenka"
+        },
+        {
+          "title": "Duszpasterstwo Młodzieży Nazaretańskiej (DMN)",
+          "intro": "Wspólnota dla młodzieży od VII klasy szkoły podstawowej. Spotkania rozpoczynają się w piątki Mszą Świętą o 18:00.",
+          "href": "/duszpasterstwo-mlodziezy-nazaretanskiej"
+        },
+        {
+          "title": "Bielanki",
+          "intro": "Dziewczęca wspólnota modlitwy, formacji i służby w liturgii. Spotkania odbywają się w piątki o 16:30.",
+          "href": "/bielanki"
+        },
+        {
+          "title": "Parafialny Zespół Caritas",
+          "intro": "Zespół pomaga osobom i rodzinom w trudnej sytuacji oraz organizuje przedświąteczne zbiórki żywności.",
+          "href": "/parafialny-zespol-caritas"
+        },
+        {
+          "title": "Parafialna Poradnia Rodzinna",
+          "intro": "Wsparcie dla narzeczonych przygotowujących się do sakramentu małżeństwa, a także dla małżonków i rodzin.",
+          "href": "/poradnia-rodzinna"
         }
       ]
     },
@@ -422,7 +447,7 @@
         },
         {
           "title": "Dokumenty",
-          "html": "<p>Oboje narzeczeni przygotowują następujące dokumenty.</p><ul><li>Aktualne świadectwo chrztu z adnotacją „do ślubu kościelnego”. Termin ważności świadectwa należy potwierdzić w kancelarii.</li><li>Świadectwo bierzmowania, jeżeli nie ma o nim adnotacji na świadectwie chrztu.</li><li>Potwierdzenie ukończenia kursu przedmałżeńskiego lub aktualnego udziału w kursie.</li><li>Potwierdzenie udziału w trzech spotkaniach w poradni rodzinnej.</li><li>Świadectwo ukończenia katechizacji w zakresie szkoły średniej.</li><li>Przy ślubie konkordatowym zaświadczenie z USC stanowiące podstawę sporządzenia aktu małżeństwa.</li><li>Jeśli wcześniej zawarto małżeństwo cywilne, akt małżeństwa z USC.</li><li>W przypadku wdowieństwa metrykę śmierci współmałżonka.</li><li>Dowody osobiste do wglądu.</li></ul>"
+          "html": "<p>Oboje narzeczeni przygotowują następujące dokumenty.</p><ul><li>Aktualne świadectwo chrztu z adnotacją „do ślubu kościelnego”. Termin ważności świadectwa należy potwierdzić w kancelarii.</li><li>Świadectwo bierzmowania, jeżeli nie ma o nim adnotacji na świadectwie chrztu.</li><li>Potwierdzenie ukończenia kursu przedmałżeńskiego lub aktualnego udziału w kursie.</li><li>Potwierdzenie udziału w trzech spotkaniach w <a href=\"/poradnia-rodzinna\">poradni rodzinnej</a>.</li><li>Świadectwo ukończenia katechizacji w zakresie szkoły średniej.</li><li>Przy ślubie konkordatowym zaświadczenie z USC stanowiące podstawę sporządzenia aktu małżeństwa.</li><li>Jeśli wcześniej zawarto małżeństwo cywilne, akt małżeństwa z USC.</li><li>W przypadku wdowieństwa metrykę śmierci współmałżonka.</li><li>Dowody osobiste do wglądu.</li></ul>"
         },
         {
           "title": "Protokół i przygotowanie",
@@ -643,6 +668,92 @@
       "group": "wspolnoty",
       "status": "published",
       "introHTML": "<p>Wspólna modlitwa, śpiew i adoracja Najświętszego Sakramentu. Spotkania odbywają się w pierwszą niedzielę miesiąca o 19:00.</p>"
+    },
+    {
+      "kind": "detail",
+      "title": "Schola dziecięca „Jutrzenka”",
+      "path": "/schola-jutrzenka",
+      "intro": "„Jutrzenka” to schola dziecięca naszej parafii. Gromadzi najmłodszych miłośników śpiewu i wspólnej modlitwy.",
+      "sections": [
+        {
+          "title": "Próby i udział we Mszy Świętej",
+          "html": "<p>W każdą niedzielę o godz. <strong>10:45</strong> spotykamy się na próbie i rozśpiewce w <strong>salce pod zakrystią</strong>. Następnie dzieci wspólnie modlą się i śpiewają podczas niedzielnej Mszy Świętej o godz. <strong>11:30</strong>.</p>"
+        },
+        {
+          "title": "Kogo zapraszamy",
+          "html": "<p>Każde dziecko, które lubi śpiewać, znajdzie w scholi miejsce, także jeśli jeszcze nie potrafi czytać. Zapraszamy dzieci, które chcą rozwijać swoje muzyczne talenty, cieszyć się wspólnym śpiewem i uczestniczyć w życiu parafii.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published"
+    },
+    {
+      "kind": "detail",
+      "title": "Duszpasterstwo Młodzieży Nazaretańskiej (DMN)",
+      "path": "/duszpasterstwo-mlodziezy-nazaretanskiej",
+      "intro": "DMN to wspólnota młodych ludzi od VII klasy szkoły podstawowej wzwyż, którzy chcą pogłębiać wiarę, rozwijać życie duchowe i budować relacje z rówieśnikami.",
+      "sections": [
+        {
+          "title": "O wspólnocie",
+          "html": "<p>Duszpasterstwo działa przy zgromadzeniach Sióstr Nazaretanek. Pomaga młodym ludziom wzrastać w wierze, poznawać Boga i odkrywać Jego obecność w codziennym życiu.</p>"
+        },
+        {
+          "title": "Spotkania w Ząbkach",
+          "html": "<p>Spotykamy się w każdy piątek. Zaczynamy wspólną Mszą Świętą o godz. <strong>18:00</strong>. Po niej odbywa się spotkanie formacyjne, zazwyczaj w <strong>sali ks. Tadeusza Karolaka</strong>.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published"
+    },
+    {
+      "kind": "detail",
+      "title": "Bielanki",
+      "path": "/bielanki",
+      "intro": "Bielanki to dziewczęca wspólnota parafialna. Dziewczęta rozwijają swoją wiarę przez modlitwę, formację i udział w liturgii.",
+      "sections": [
+        {
+          "title": "Spotkania i zaproszenie",
+          "html": "<p>Spotykamy się w każdy piątek o godz. <strong>16:30</strong> w <strong>domu parafialnym, nad kancelarią</strong>. To czas wspólnej modlitwy, budowania przyjaźni i rozwijania wiary. Zapraszamy dziewczęta, które chcą dołączyć do wspólnoty i uczestniczyć w życiu parafii.</p>"
+        },
+        {
+          "title": "Udział w liturgii i procesjach",
+          "html": "<p>Podczas niedzielnej Mszy Świętej o godz. <strong>11:30</strong> Bielanki czytają modlitwę wiernych i niosą dary do ołtarza.</p><p>Dziewczęta uczestniczą także w nabożeństwach i uroczystościach parafialnych. Sypią kwiaty w procesjach podczas Bożego Ciała i jego oktawy, odpustów parafialnych oraz świąt wielkanocnych.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published"
+    },
+    {
+      "kind": "detail",
+      "title": "Parafialny Zespół Caritas",
+      "path": "/parafialny-zespol-caritas",
+      "intro": "Parafialny Zespół Caritas pomaga osobom i rodzinom, które znalazły się w trudnej sytuacji życiowej.",
+      "sections": [
+        {
+          "title": "Zbiórki żywności",
+          "html": "<p>Jedną z głównych form działalności zespołu są zbiórki żywności dla najuboższych parafian. Odbywają się przed Bożym Narodzeniem i Wielkanocą.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published"
+    },
+    {
+      "kind": "detail",
+      "title": "Parafialna Poradnia Rodzinna",
+      "path": "/poradnia-rodzinna",
+      "intro": "Parafialna Poradnia Rodzinna służy pomocą narzeczonym przygotowującym się do zawarcia sakramentu małżeństwa, małżonkom i rodzinom.",
+      "sections": [
+        {
+          "title": "Zakres wsparcia",
+          "html": "<p>Poradnia pomaga przygotować się do życia w małżeństwie i rodzinie. Porusza zagadnienia budowania trwałych relacji, odpowiedzialnego rodzicielstwa i życia zgodnego z nauczaniem Kościoła.</p>"
+        },
+        {
+          "title": "Przygotowanie do ślubu",
+          "html": "<p>Informacje o dokumentach i pozostałych etapach przygotowania znajdziesz na stronie <a href=\"/malzenstwo\">Małżeństwo</a>.</p>"
+        }
+      ],
+      "group": "wspolnoty",
+      "status": "published"
     },
     {
       "kind": "information",
